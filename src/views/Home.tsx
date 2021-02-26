@@ -24,7 +24,7 @@ const Home = (): JSX.Element => {
   const playAll = () => {
     stop();
     const start = timeStamps[page * mantraPerPage];
-    const end = timeStamps[(page + 1) * (mantraPerPage - 1)];
+    const end = timeStamps[(page + 1) * mantraPerPage];
     play(start, end);
   };
 
