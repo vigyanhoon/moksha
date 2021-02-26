@@ -1,55 +1,46 @@
-import {StackNavigationProp} from '@react-navigation/stack';
-import React, {useState} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
-import {Audio} from 'expo-av'
-import {RootStackParamList} from '../../App';
-import {Button} from 'react-native-paper';
-var Sound = require('react-native-sound');
+import React from 'react';
+import {
+  StyleSheet,
+  View,
+  Text,
+  Dimensions,
+  TouchableOpacity,
+} from 'react-native';
+import { names, timeStamps } from '../Utils/VishnuSahsranama';
+import { play, stop } from '../Utils/Player';
+import { IconButton } from 'react-native-paper';
 
-type NavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
+const Home = (): JSX.Element => {
+  const toggleAudio = (index: number) => {
+    const start = timeStamps[index];
+    const end = timeStamps[index + 1];
+    stop();
+    play(start, end);
+  };
 
-interface Props {
-  navigation: NavigationProp;
-}
-
-const Home = ({navigation}: Props): JSX.Element => {
-  const [audio, setAudio] = useState();
-
-  const play = async () => {
-    var whoosh = new Sound('malini.mp3', Sound.MAIN_BUNDLE, (error) => {
-      if (error) {
-        console.log('failed to load the sound', error);
-        return;
-      }
-      // loaded successfully
-      console.log('duration in seconds: ' + whoosh.getDuration() + 'number of channels: ' + whoosh.getNumberOfChannels());
-
-      // Play the sound with an onEnd callback
-      whoosh.play((success) => {
-        if (success) {
-          console.log('successfully finished playing');
-        } else {
-          console.log('playback failed due to audio decoding errors');
-        }
-      });
-    });
-    setAudio(whoosh)
-  }
-
-  const stop = () => {
-    audio.stop()
-  }
+  const MantraView = () => {
+    const list: string[] = names.slice(0, 8);
+    return (
+      <View>
+        {list.map((item, index) => {
+          return (
+            <TouchableOpacity
+              style={styles.itemContainer}
+              key={item}
+              onPress={() => toggleAudio(index)}>
+              <Text style={styles.text}>{item}</Text>
+            </TouchableOpacity>
+          );
+        })}
+      </View>
+    );
+  };
 
   return (
     <>
       <View style={styles.body}>
-        <Text>Hi</Text>
-        <Button icon="play" mode="contained" onPress={play}>
-          Play
-        </Button>
-        <Button icon="play" mode="contained" onPress={stop}>
-          Stop
-        </Button>
+        <IconButton icon="stop" size={30} onPress={stop} />
+        <MantraView />
       </View>
     </>
   );
@@ -58,9 +49,17 @@ const Home = ({navigation}: Props): JSX.Element => {
 const styles = StyleSheet.create({
   body: {
     flex: 1,
+    backgroundColor: '#FFCC99',
+    padding: 20,
     justifyContent: 'center',
-    alignItems: 'center'
-  }
+    alignItems: 'center',
+  },
+  itemContainer: {
+    marginVertical: 15,
+  },
+  text: {
+    fontSize: Dimensions.get('window').width * 0.05,
+  },
 });
 
 export default Home;

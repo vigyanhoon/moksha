@@ -1,12 +1,12 @@
 import React from 'react';
 
-import {Provider} from 'react-redux';
-import {store} from './src/reducers/store';
-import {Provider as PaperProvider} from 'react-native-paper';
+import { Provider } from 'react-redux';
+import { store } from './src/reducers/store';
+import { Provider as PaperProvider } from 'react-native-paper';
 import Home from './src/views/Home';
 
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -22,7 +22,7 @@ const App: () => React.ReactNode = () => {
           <NavigationContainer>
             <Stack.Navigator>
               <Stack.Screen
-                options={{headerShown: false}}
+                options={{ headerShown: false }}
                 name="Home"
                 component={Home}
               />
