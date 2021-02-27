@@ -6,25 +6,31 @@ import {
   Dimensions,
   TouchableOpacity,
 } from 'react-native';
-import { names, timeStamps } from '../Utils/VishnuSahsranama';
+import { MantraType, mantras } from '../Utils/VishnuSahsranama';
 import { play, stop } from '../Utils/Player';
 import { IconButton } from 'react-native-paper';
+import Popup from './Popup';
 
 const Home = (): JSX.Element => {
   const mantraPerPage = 7;
   const [page, setPage] = useState(0);
+  const [showPopup, setShowPopup] = useState(false);
+  const [meaning, setMeaning] = useState('');
+  const [selectedIndex, setSelectedIndex] = useState<number>();
 
   const playOne = (index: number) => {
     stop();
-    const start = timeStamps[page * mantraPerPage + index];
-    const end = timeStamps[page * mantraPerPage + index + 1];
+    const mantraIndex = page * mantraPerPage + index;
+    setSelectedIndex(mantraIndex);
+    const start = mantras[mantraIndex].time;
+    const end = mantras[mantraIndex + 1].time;
     play(start, end);
   };
 
   const playAll = () => {
     stop();
-    const start = timeStamps[page * mantraPerPage];
-    const end = timeStamps[(page + 1) * mantraPerPage];
+    const start = mantras[page * mantraPerPage].time;
+    const end = mantras[(page + 1) * mantraPerPage].time;
     play(start, end);
   };
 
@@ -37,8 +43,34 @@ const Home = (): JSX.Element => {
     setPage(page + 1);
   };
 
+  const showMeaning = (index: number) => {
+    const mantraIndex = page * mantraPerPage + index;
+    setSelectedIndex(mantraIndex);
+    setMeaning(mantras[mantraIndex].meaning);
+    setShowPopup(true);
+  };
+
+  const Mantra = ({ text, index }: { text: string; index: number }) => {
+    console.log(index);
+    const mantra = text.split('। ').join('।\n');
+    return (
+      <Text
+        style={[
+          styles.text,
+          {
+            color:
+              page * mantraPerPage + index === selectedIndex
+                ? 'red'
+                : undefined,
+          },
+        ]}>
+        {mantra}
+      </Text>
+    );
+  };
+
   const MantraView = () => {
-    const list: string[] = names.slice(
+    const list: MantraType[] = mantras.slice(
       page * mantraPerPage,
       (page + 1) * mantraPerPage,
     );
@@ -48,9 +80,10 @@ const Home = (): JSX.Element => {
           return (
             <TouchableOpacity
               style={styles.itemContainer}
-              key={item}
+              key={item.mantra}
+              onLongPress={() => showMeaning(index)}
               onPress={() => playOne(index)}>
-              <Text style={styles.text}>{item}</Text>
+              <Mantra text={item.mantra} index={index} />
             </TouchableOpacity>
           );
         })}
@@ -60,8 +93,17 @@ const Home = (): JSX.Element => {
 
   return (
     <>
+      <Popup
+        showPopup={showPopup}
+        setShowPopup={setShowPopup}
+        title={'Mantra ' + (selectedIndex && selectedIndex + 1)}
+        text={meaning}
+      />
       <View style={styles.body}>
         <Text style={styles.pageNo}>{page + 1}</Text>
+        <Text style={styles.mantraNo}>
+          {selectedIndex && selectedIndex + 1}
+        </Text>
         <View style={styles.player}>
           <IconButton icon="stop" size={40} onPress={stop} />
           <IconButton icon="play" size={40} onPress={playAll} />
@@ -90,23 +132,31 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
   },
+  mantraNo: {
+    position: 'absolute',
+    right: 20,
+    top: 20,
+    fontSize: 30,
+    fontWeight: 'bold',
+  },
   player: {
     flexDirection: 'row',
-    backgroundColor: 'red',
     position: 'absolute',
     top: 20,
   },
   itemContainer: {
     marginVertical: 15,
+    flexDirection: 'row',
   },
   text: {
     fontSize: Dimensions.get('window').width * 0.05,
   },
   controller: {
     flexDirection: 'row',
-    backgroundColor: 'red',
     position: 'absolute',
     bottom: 20,
+    width: Dimensions.get('window').width,
+    justifyContent: 'space-between',
   },
 });
 
