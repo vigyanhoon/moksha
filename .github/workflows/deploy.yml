@@ -30,6 +30,7 @@ jobs:
         cd web
         npm install
         npx yarn build
+        touch build/.nojekyll
         
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
