@@ -1,5 +1,5 @@
 import { createUseStyles } from 'react-jss'
-import { play as playIcon, pause, loop } from '../../assets'
+import { play as playIcon, pause, loop, unloop } from '../../assets'
 
 const useStyles = createUseStyles({
     container: {
@@ -12,12 +12,21 @@ const useStyles = createUseStyles({
     }
 })
 
-export const Controller = ({ play, stop, playing }: { play: () => void, stop: () => void, playing: boolean }) => {
+interface CType {
+    play: () => void,
+    stop: () => void,
+    playing: boolean,
+    looping: boolean,
+    setLooping: (b: boolean) => void
+}
+
+export const Controller = ({ play, stop, playing, looping, setLooping }: CType) => {
     const classes = useStyles()
+
     return (
         <div className={classes.container}>
             <img onClick={playing ? stop : play} className={classes.image} src={playing ? pause : playIcon} />
-            <img className={classes.image} src={loop} />
+            <img onClick={() => setLooping(!looping)} className={classes.image} src={looping ? unloop : loop} />
         </div>
     )
 }

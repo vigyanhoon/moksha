@@ -1,17 +1,24 @@
 import { useState, useEffect, useRef } from 'react';
 import { mantras, MantraType } from './mantras';
 
-export function Player(audio: HTMLAudioElement) {
+export default function usePlayer(audio: HTMLAudioElement) {
     const [currentPlaying, setCurrentPlaying] = useState(0)
     const [playing, setPlaying] = useState(false)
+    const [looping, setLooping] = useState(false)
+
     let index = useRef(0)
 
     function handleEvent(e: Event) {
+        const currentTime = mantras[index.current].time
         const nextTime = mantras[index.current + 1].time
 
         if (audio.currentTime > nextTime) {
-            index.current++
-            setCurrentPlaying(index.current)
+            if (looping) {
+                audio.currentTime = currentTime
+            } else {
+                index.current++
+                setCurrentPlaying(index.current)
+            }
         }
     }
 
@@ -19,7 +26,7 @@ export function Player(audio: HTMLAudioElement) {
         audio.addEventListener('timeupdate', handleEvent);
 
         return () => audio.removeEventListener('timeupdate', handleEvent);
-    }, [])
+    }, [looping])
 
     const play = (m?: MantraType) => {
         if (m?.mantra) {
@@ -42,6 +49,8 @@ export function Player(audio: HTMLAudioElement) {
         currentPlaying,
         play,
         stop,
-        playing
+        playing,
+        looping,
+        setLooping
     }
 }

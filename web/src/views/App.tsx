@@ -1,9 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
 import { mantras } from '../mantras';
 import mp3 from '../../assets/vishnu_sahasranamam.mp3'
 import { Mantra } from './Mantra';
 import { createUseStyles } from 'react-jss';
-import { Player } from '../usePlayer';
+import usePlayer from '../usePlayer';
 import { Controller } from './Controller';
 
 const useStyles = createUseStyles({
@@ -21,11 +20,13 @@ const audio = new Audio(mp3)
 
 function App() {
   const classes = useStyles()
-  const { currentPlaying, play, playing, stop } = Player(audio)
+  const { currentPlaying, play, stop, playing, looping, setLooping } = usePlayer(audio)
+
+  const props = { currentPlaying, play, playing, stop, looping, setLooping }
 
   return (
     <div className={classes.app}>
-      <Controller play={play} stop={stop} playing={playing} />
+      <Controller {...props} />
       <div className={classes.container}>
         {mantras.map((m, i) => (
           <Mantra key={i} mantra={m} currentPlaying={currentPlaying} index={i} play={play} />
