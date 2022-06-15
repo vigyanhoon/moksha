@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { mantras, MantraType } from './mantras';
 
 export default function usePlayer(audio: HTMLAudioElement) {
@@ -8,7 +8,7 @@ export default function usePlayer(audio: HTMLAudioElement) {
 
     let index = useRef(0)
 
-    function handleEvent(e: Event) {
+    const handleEvent = useCallback((e: Event) => {
         const currentTime = mantras[index.current].time
         const nextTime = mantras[index.current + 1].time
 
@@ -20,13 +20,13 @@ export default function usePlayer(audio: HTMLAudioElement) {
                 setCurrentPlaying(index.current)
             }
         }
-    }
+    }, [looping, audio])
 
     useEffect(() => {
         audio.addEventListener('timeupdate', handleEvent);
 
         return () => audio.removeEventListener('timeupdate', handleEvent);
-    }, [looping])
+    }, [looping, audio, handleEvent])
 
     const play = (m?: MantraType) => {
         if (m?.mantra) {

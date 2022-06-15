@@ -25,8 +25,8 @@ export const Controller = ({ play, stop, playing, looping, setLooping }: CType) 
 
     return (
         <div className={classes.container}>
-            <img onClick={playing ? stop : play} className={classes.image} src={playing ? pause : playIcon} />
-            <img onClick={() => setLooping(!looping)} className={classes.image} src={looping ? unloop : loop} />
+            <img onClick={playing ? stop : play} className={classes.image} src={playing ? pause : playIcon} alt='' />
+            <img onClick={() => setLooping(!looping)} className={classes.image} src={looping ? unloop : loop} alt='' />
         </div>
     )
 }
