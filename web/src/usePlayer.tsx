@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { mantras, MantraType } from './mantras';
+import { mantras, MantraType } from './views/VishnuSahasranama/text';
 
 export default function usePlayer(audio: HTMLAudioElement) {
     const [currentPlaying, setCurrentPlaying] = useState(0)

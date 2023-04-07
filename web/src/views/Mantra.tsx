@@ -1,5 +1,5 @@
 import { createUseStyles } from 'react-jss'
-import { MantraType } from '../mantras';
+import { MantraType } from './VishnuSahasranama/text';
 
 const useStyles = createUseStyles({
     mantra: {

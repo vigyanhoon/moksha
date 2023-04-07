@@ -1,9 +1,9 @@
-import { mantras } from '../mantras';
-import mp3 from '../../assets/vishnu_sahasranamam.mp3'
-import { Mantra } from './Mantra';
+import { mantras } from './text';
+import mp3 from '../../../assets/vishnu_sahasranamam.mp3'
+import { Mantra } from '../Mantra';
 import { createUseStyles } from 'react-jss';
-import usePlayer from '../usePlayer';
-import { Controller } from './Controller';
+import usePlayer from '../../usePlayer';
+import { Controller } from '../Controller';
 
 const useStyles = createUseStyles({
   app: {
