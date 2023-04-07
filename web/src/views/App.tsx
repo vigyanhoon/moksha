@@ -11,8 +11,7 @@ const useStyles = createUseStyles({
     backgroundColor: '#FFCC99'
   },
   container: {
-    overflowY: 'scroll',
-    height: '100vh',
+
   }
 })
 
