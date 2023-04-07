@@ -6,9 +6,9 @@ export default function usePlayer(audio: HTMLAudioElement) {
     const [playing, setPlaying] = useState(false)
     const [looping, setLooping] = useState(false)
 
-    let index = useRef(0)
+    const index = useRef(0)
 
-    const handleEvent = useCallback((e: Event) => {
+    const handleEvent = useCallback(() => {
         const currentTime = mantras[index.current].time
         const nextTime = mantras[index.current + 1].time
 
