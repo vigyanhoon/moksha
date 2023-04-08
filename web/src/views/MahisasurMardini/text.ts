@@ -1,123 +1,263 @@
 export type MantraType = {
   mantra: string;
+  english: string;
   time: number;
   meaning: string;
 };
 
 const mantras: MantraType[] = [
   {
-    mantra: `शुक्लाम्बरधरं विष्णुं शशिवर्णं चतुर्भुजम् । प्रसन्नवदनं ध्यायेत् सर्वविघ्नोपशान्तये sdf॥ १॥`,
-    time: 52,
-    meaning:
-      'One should meditate for the removal of all obstacles upon Vishnu who is clad in white garments, who has a lustre like the moon, who has four arms and a beneficent face.',
-  },
-
-  //   `यस्य द्विरदवक्त्राद्याः पारिषद्याः परः शतम् ।
-  // विघ्नं निघ्नन्ति सततं विष्वक्सेनं तमाश्रये ॥ २॥`,
-  {
-    mantra: `व्यासं वसिष्ठनप्तारं शक्तेः पौत्रमकल्मषम् । पराशरात्मजं वन्दे शुकतातं तपोनिधिम् ॥ ३॥`,
-    time: 61,
-    meaning: `Vyasa is the great grandson of Vasishta and the grandson of Shakti. He is the son of Parasara and the father of Suka. I offer my obeisance to the Vyasa who is free from all defects and is a repository of austerities.`,
+    mantra: `अयि गिरिनन्दिनि नन्दितमेदिनि विश्वविनोदिनि नन्दिनुते
+    गिरिवरविन्ध्यशिरोऽधिनिवासिनि विष्णुविलासिनि जिष्णुनुते ।
+    भगवति हे शितिकण्ठकुटुम्बिनि भूरिकुटुम्बिनि भूरिकृते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १ ॥`,
+    english: `Ayi Giri-Nandini Nandita-Medini Vishva-Vinodini Nandi-Nute
+    Giri-Vara-Vindhya-Shiro-[A]dhi-Nivaasini Vissnnu-Vilaasini Jissnnu-Nute |
+    Bhagavati He Shiti-Kannttha-Kuttumbini Bhuri-Kuttumbini Bhuri-Krte
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 1 ||`,
+    time: 0,
+    meaning:``,
   },
   {
-    mantra: `व्यासाय विष्णुरूपाय व्यासरूपाय विष्णवे । नमो वै ब्रह्मनिधये वासिष्ठाय नमो नमः ॥ ४॥`,
-    time: 70,
-    meaning: `My repeated salutations to Vyasa who is the form of Vishnu and to Vishnu who is the form of Vyasa — sage Vyasa who is a descendant of Vasistha and who is a treasure of Knowledge of Brahman.`,
+    mantra: `सुरवरवर्षिणि दुर्धरधर्षिणि दुर्मुखमर्षिणि हर्षरते
+    त्रिभुवनपोषिणि शङ्करतोषिणि किल्बिषमोषिणि घोषरते
+    दनुजनिरोषिणि दितिसुतरोषिणि दुर्मदशोषिणि सिन्धुसुते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ २ ॥`,
+    english: `Sura-Vara-Varssinni Durdhara-Dharssinni Durmukha-Marssinni Harssa-Rate
+    Tribhuvana-Possinni Shangkara-Tossinni Kilbissa-Mossinni Ghossa-Rate
+    Danuja-Nirossinni Diti-Suta-Rossinni Durmada-Shossinni Sindhu-Sute
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 2 ||`,
+    time: 47,
+    meaning:``,
   },
   {
-    mantra: `अविकाराय शुद्धाय नित्याय परमात्मने । सदैकरूपरूपाय विष्णवे सर्वजिष्णवे ॥ ५॥`,
-    time: 79.5,
-    meaning: `I offer my obeisance to Vishnu, Who is devoid of all mutations, Who is by nature pure and eternal, Who is endowed with a form which is uniform at all times and Who is the victor over all.`,
+    mantra: `अयि जगदम्ब मदम्ब कदम्ब वनप्रियवासिनि हासरते
+    शिखरि शिरोमणि तुङ्गहिमलय शृङ्गनिजालय मध्यगते ।
+    मधुमधुरे मधुकैटभगञ्जिनि कैटभभञ्जिनि रासरते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ३ ॥`,
+    english: `Ayi Jagad[t]-Amba Mad-Amba Kadamba Vana-Priya-Vaasini Haasa-Rate
+    Shikhari Shiro-Manni Tungga-Himalaya Shrngga-Nija-[Aa]laya Madhya-Gate |
+    Madhu-Madhure Madhu-Kaittabha-Gan.jini Kaittabha-Bhan.jini Raasa-Rate
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 3 ||`,
+    time: 90,
+    meaning:``,
   },
   {
-    mantra: `यस्य स्मरणमात्रेण जन्मसंसारबन्धनात् । विमुच्यते नमस्तस्मै विष्णवे प्रभविष्णवे ॥ ६॥ \nॐ नमो विष्णवे प्रभविष्णवे ।`,
-    time: 88.5,
-    meaning: `My salutations to that Supreme Being Vishnu, by a mere though of Whose name all persons are freed from the bonds of Samsara. Salutations to the omnipotent Being Who is signified by the Pranava.`,
-  },
-  {
-    mantra: `श्रीवैशम्पायन उवाच । श्रुत्वा धर्मानशेषेण पावनानि च सर्वशः । युधिष्ठिरः शान्तनवं पुनरेवाभ्यभाषत ॥ ७॥`,
-    time: 102,
-    meaning: `Sri Vaishampayana said — Having heard all the Dharmas in their entirety (without anything having been left out) and having learnt about all purificatory acts, Yudhisthira again addressed Bhishma as follows;`,
-  },
-  {
-    mantra: `युधिष्ठिर उवाच । किमेकं दैवतं लोके किं वाप्येकं परायणम् । स्तुवन्तः कं कमर्चन्तः प्राप्नुयुर्मानवाः शुभम् ॥ ८॥`,
-    time: 114.5,
-    meaning: `Yudhisthira said:— Who is the One Supreme Being which the Scriptures declare? What is the one Supreme Goal which should be sought ? By the recitation of what mantra is a person released from the bonds of repeated birth and death? Which in your opinion is the highest form of religion?`,
-  },
-  {
-    mantra: `को धर्मः सर्वधर्माणां भवतः परमो मतः । किं जपन्मुच्यते जन्तुर्जन्मसंसारबन्धनात् ॥ ९॥`,
-    time: 127,
-    meaning: `What spiritual path is that, which according to thy judgment is the foremost of all paths ? What are those mantras by reciting which a being becomes freed from the bonds of birth and death.`,
-  },
-  {
-    mantra: `भीष्म उवाच । जगत्प्रभुं देवदेवमनन्तं पुरुषोत्तमम् । स्तुवन् नामसहस्रेण पुरुषः सततोत्थितः ॥ १०॥`,
+    mantra: `अयि शतखण्ड विखण्डितरुण्ड वितुण्डितशुण्द गजाधिपते
+    रिपुगजगण्ड विदारणचण्ड पराक्रमशुण्ड मृगाधिपते ।
+    निजभुजदण्ड निपातितखण्ड विपातितमुण्ड भटाधिपते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ४ ॥`,
+    english: `Ayi Shata-Khanndda Vikhannddita-Runndda Vitunnddita-Shunnda Gaja-[A]dhipate
+    Ripu-Gaja-Ganndda Vidaaranna-Canndda Paraakrama-Shunndda Mrga-[A]dhipate |
+    Nija-Bhuja-Danndda Nipaatita-Khanndda Vipaatita-Munndda Bhatta-[A]dhipate
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 4 ||`,
     time: 137,
-    meaning: `Bhishma said:— A person who is always engaged in praising with the hymn of a Thousand Names; the Lord of the Universe, the God of gods, and the limitless Supreme Being,`,
+    meaning:``,
   },
   {
-    mantra: `तमेव चार्चयन्नित्यं  भक्त्या पुरुषमव्ययम् । ध्यायन् स्तुवन् नमस्यंश्च यजमानस्तमेव च ॥ ११॥`,
-    time: 148.5,
-    meaning: `And engaged in worshipping Him with devotion, meditating upon Him, glorifying Him, offering obeisance and adoring Him,`,
+    mantra: `अयि रणदुर्मद शत्रुवधोदित दुर्धरनिर्जर शक्तिभृते
+    चतुरविचार धुरीणमहाशिव दूतकृत प्रमथाधिपते ।
+    दुरितदुरीह दुराशयदुर्मति दानवदुत कृतान्तमते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ५ ॥`,
+    english: `Ayi Ranna-Durmada Shatru-Vadho[a-U]dita Durdhara-Nirjara Shakti-Bhrte
+    Catura-Vicaara Dhuriinna-Mahaashiva Duuta-Krta Pramatha-[A]dhipate |
+    Durita-Duriiha Duraashaya-Durmati Daanava-Duta Krtaanta-Mate
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 5 ||`,
+    time: 178.5,
+    meaning:``,
   },
   {
-    mantra: `अनादिनिधनं विष्णुं सर्वलोकमहेश्वरम् । लोकाध्यक्षं स्तुवन्नित्यं सर्वदुःखातिगो भवेत् ॥ १२॥`,
-    time: 158.5,
-    meaning: `one who is ever engaged in praising the Lord who is without beginning and end, the Allpervading-One, the Ruler of the Universe, the Supervisor of the worlds, the One Who is to be known from the Vedas, Who is Himself the Knower of all Dharmas, the One Who is constantly engaged in the Universal Welfare, Lord of the Universe, and the Cause of all beings — such a devotee transcends over all the sorrows of this material world.`,
+    mantra: `अयि शरणागत वैरिवधुवर वीरवराभय दायकरे
+    त्रिभुवनमस्तक शूलविरोधि शिरोऽधिकृतामल शूलकरे ।
+    दुमिदुमितामर धुन्दुभिनादमहोमुखरीकृत दिङ्मकरे
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ६ ॥`,
+    english: `Ayi Sharannaagata Vairi-Vadhuvara Viiravara-[A]bhaya Daaya-Kare
+    Tri-Bhuvana-Mastaka Shuula-Virodhi Shiro-[A]dhikrta-[A]mala Shuula-Kare |
+    Dumi-Dumi-Taamara Dhundubhi-Naadam-Aho-Mukhariikrta Dingma-Kare
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 6 ||`,
+    time: 221.5,
+    meaning:``,
   },
   {
-    mantra: `ब्रह्मण्यं सर्वधर्मज्ञं लोकानां कीर्तिवर्धनम् । लोकनाथं महद्भूतं सर्वभूतभवोद्भवम् ॥ १३॥`,
-    time: 168,
-    meaning: `Verily He is champion of the devotees, conversant with all duties and injunctions, the enhancer of fame and achievement of all people, the master of all the universe, exceedingly wonderful, and the cause of the origination of all beings.`,
+    mantra: `अयि निजहुङ्कृति मात्रनिराकृत धूम्रविलोचन धूम्रशते
+    समरविशोषित शोणितबीज समुद्भवशोणित बीजलते ।
+    शिवशिवशुम्भ निशुम्भमहाहव तर्पितभूत पिशाचरते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ७ ॥`,
+    english: `Ayi Nija-Hungkrti Maatra-Niraakrta Dhumravilocana Dhumra-Shate
+    Samara-Vishossita Shonnita-Biija Samudbhava-Shonnita Biija-Late |
+    Shiva-Shiva-Shumbha Nishumbha-Mahaahava Tarpita-Bhuta Pishaaca-Rate
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 7 ||
+    `,
+    time: 264.5,
+    meaning:``,
   },
   {
-    mantra: `एष मे सर्वधर्माणां धर्मोऽधिकतमो मतः । यद्भक्त्या पुण्डरीकाक्षं स्तवैरर्चेन्नरः सदा ॥ १४॥`,
-    time: 177.8,
-    meaning: `This worship of the Supreme Lotus-eyed Lord at all times by a person endowed with devotion is regarded by me as the greatest of all religious practices`,
+    mantra: `धनुरनुषङ्ग रणक्षणसङ्ग परिस्फुरदङ्ग नटत्कटके
+    कनकपिशङ्ग पृषत्कनिषङ्ग रसद्भटशृङ्ग हताबटुके ।
+    कृतचतुरङ्ग बलक्षितिरङ्ग घटद्बहुरङ्ग रटद्बटुके
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ८ ॥`,
+    english: `Dhanur-Anussangga Ranna-Kssanna-Sangga Parisphurad-Angga Nattat-Kattake
+    Kanaka-Pishangga Prssatka-Nissangga Rasad-Bhatta-Shrngga Hataa-Battuke |
+    Krta-Caturangga Bala-Kssiti-Rangga Ghattad-Bahu-Rangga Rattad-Battuke
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 8 ||`,
+    time: 308,
+    meaning:``,
   },
   {
-    mantra: `परमं यो महत्तेजः परमं यो महत्तपः । परमं यो महद्ब्रह्म परमं यः परायणम् ॥ १५॥`,
-    time: 188,
-    meaning: `He Who is the Supreme Effulgence; Who is the Supreme Director; Who is the Supreme Brahman; and Who is the Supreme, Highest and Ultimate Goal;`,
+    mantra: `सुरललना ततथेयि तथेयि कृताभिनयोदर नृत्यरते
+    कृत कुकुथः कुकुथो गडदादिकताल कुतूहल गानरते ।
+    धुधुकुट धुक्कुट धिंधिमित ध्वनि धीर मृदंग निनादरते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ९ ॥`,
+    english: `Sura-Lalanaa Tatatheyi Tatheyi Krta-Abhinayo-[U]dara Nrtya-Rate
+    Krta Kukuthah Kukutho Gaddadaadika-Taala Kutuuhala Gaana-Rate |
+    Dhudhukutta Dhukkutta Dhimdhimita Dhvani Dhiira Mrdamga Ninaada-Rate
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 9 ||`,
+    time: 351,
+    meaning:``,
   },
   {
-    mantra: `पवित्राणां पवित्रं यो मङ्गलानां च मङ्गलम् । दैवतं दैवतानां च भूतानां योऽव्ययः पिता ॥ १६॥`,
-    time: 197,
-    meaning: `He Who is the purest of the pure and the most auspicious amongst the auspicious, The God of gods and the indestructible Progenitor of all beings.`,
+    mantra: `जय जय जप्य जयेजयशब्द परस्तुति तत्परविश्वनुते
+    झणझणझिञ्झिमि झिङ्कृत नूपुरशिञ्जितमोहित भूतपते ।
+    नटित नटार्ध नटी नट नायक नाटितनाट्य सुगानरते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १० ॥`,
+    english: `Jaya Jaya Japya Jaye-Jaya-Shabda Para-Stuti Tat-Para-Vishva-Nute
+    Jhanna-Jhanna-Jhin.jhimi Jhingkrta Nuupura-Shin.jita-Mohita Bhuuta-Pate |
+    Nattita Nattaardha Nattii Natta Naayaka Naattita-Naattya Su-Gaana-Rate
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 10 ||`,
+    time: 354.5,
+    meaning:``,
   },
   {
-    mantra: `यतः सर्वाणि भूतानि भवन्त्यादियुगागमे । यस्मिंश्च प्रलयं यान्ति पुनरेव युगक्षये ॥ १७॥`,
-    time: 207,
-    meaning: `From Whom all beings originate in the beginning of the first Yuga and in Whom they merge again at the end of the Yuga.`,
+    mantra: `अयि सुमनःसुमनःसुमनः सुमनःसुमनोहरकान्तियुते
+    श्रितरजनी रजनीरजनी रजनीरजनी करवक्त्रवृते ।
+    सुनयनविभ्रमर भ्रमरभ्रमर भ्रमरभ्रमराधिपते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ ११ ॥`,
+    english: `Ayi Sumanah-Sumanah-Sumanah Sumanah-Sumanohara-Kaanti-Yute
+    Shrita-Rajanii Rajanii-Rajanii Rajanii-Rajanii Kara-Vaktra-Vrte |
+    Sunayana-Vi-Bhramara Bhramara-Bhramara Bhramara-Bhramara-[A]dhipate
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 11 ||`,
+    time: 394.5,
+    meaning:``,
   },
   {
-    mantra: `तस्य लोकप्रधानस्य जगन्नाथस्य भूपते । विष्णोर्नामसहस्रं मे श‍ृणु पापभयापहम् ॥ १८॥`,
-    time: 217,
-    meaning: `O King! Hear from me the Thousand Names which remove sins and drive away fear. The appellations of that Vishnu, Lord of the Universe and Ruler of the World.`,
+    mantra: `सहितमहाहव मल्लमतल्लिक मल्लितरल्लक मल्लरते
+    विरचितवल्लिक पल्लिकमल्लिक झिल्लिकभिल्लिक वर्गवृते ।
+    शितकृतफुल्ल समुल्लसितारुण तल्लजपल्लव सल्ललिते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १२ ॥`,
+    english: `Sahita-Mahaahava Mallama-Tallika Malli-Tarallaka Malla-Rate
+    Viracita-Vallika Pallika-Mallika Jhillika-Bhillika Varga-Vrte |
+    Shita-Krta-Phulla Samullasita-[A]runna Tallaja-Pallava Sal-Lalite
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 12 ||`,
+    time: 441,
+    meaning:``,
   },
   {
-    mantra: `यानि नामानि गौणानि विख्यातानि महात्मनः । ऋषिभिः परिगीतानि तानि वक्ष्यामि भूतये ॥ १९॥`,
-    time: 226.5,
-    meaning: `For the good of the world, I shall tell you the holy names of the Supreme Being, which are indicative of His attributes and glory, well known and recited by the Rishis.`,
+    mantra: `अविरलगण्ड गलन्मदमेदुर मत्तमतङ्ग जराजपते
+    त्रिभुवनभुषण भूतकलानिधि रूपपयोनिधि राजसुते ।
+    अयि सुदतीजन लालसमानस मोहन मन्मथराजसुते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १३ ॥`,
+    english: `Avirala-Ganndda Galan-Mada-Medura Matta-Matangga ja-Raaja-Pate
+    Tri-Bhuvana-Bhussanna Bhuuta-Kalaanidhi Ruupa-Payo-Nidhi Raaja-Sute |
+    Ayi Sudatii-Jana Laalasa-Maanasa Mohana Manmatha-Raaja-Sute
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 13 ||`,
+    time: 484.7,
+    meaning:``,
   },
   {
-    mantra: `ऋषिर्नाम्नां सहस्रस्य वेदव्यासो महामुनिः । छन्दोऽनुष्टुप् तथा देवो भगवान् देवकीसुतः ॥ २०॥`,
-    time: 236,
-    meaning: `The Great Vedavyasa is the Seer of these Thousand Names of Vishnu, the metre is the anushtup, the Presiding Deity is Lord Krishna the son of Devaki.`,
+    mantra: `कमलदलामल कोमलकान्ति कलाकलितामल भाललते
+    सकलविलास कलानिलयक्रम केलिचलत्कल हंसकुले ।
+    अलिकुलसङ्कुल कुवलयमण्डल मौलिमिलद्बकुलालिकुले
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १४ ॥`,
+    english: `Kamala-Dala-[A]mala Komala-Kaanti Kalaa-Kalita-[A]mala Bhaalalate
+    Sakala-Vilaasa Kalaa-Nilaya-Krama Keli-Calat-Kala Hamsa-Kule |
+    Alikula-Sangkula Kuvalaya-Mannddala Mouli-Milad-Bakula-Ali-Kule
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 14 ||`,
+    time: 528,
+    meaning:``,
   },
   {
-    mantra: `अमृतांशूद्भवो बीजं शक्तिर्देवकिनन्दनः । त्रिसामा हृदयं तस्य शान्त्यर्थे विनियोज्यते ॥ २१॥`,
-    time: 245.8,
-    meaning: `The seed is He-who-was-born-in-the-lunar-race; its power is The Name, The-son-of-Devaki. The heart is the One-who-is-lauded-by-the-three-Sama-hymns, The purpose of its use is the attainment of peace.`,
+    mantra: `करमुरलीरव वीजितकूजित लज्जितकोकिल मञ्जुमते
+    मिलितपुलिन्द मनोहरगुञ्जित रञ्जितशैल निकुञ्जगते ।
+    निजगणभूत महाशबरीगण सद्गुणसम्भृत केलितले
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १५ ॥`,
+    english: `Kara-Muralii-Rava Viijita-Kuujita Lajjita-Kokila Man.ju-Mate
+    Milita-Pulinda Manohara-Gun.jita Ran.jita-Shaila Nikun.ja-Gate |
+    Nija-Ganna-Bhuuta Mahaa-Shabarii-Ganna Sad-Gunna-Sambhrta Keli-Tale
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 15 ||`,
+    time: 571.4,
+    meaning:``,
   },
   {
-    mantra: `विष्णुं जिष्णुं महाविष्णुं प्रभविष्णुं महेश्वरम् । अनेकरूप दैत्यान्तं नमामि पुरुषोत्तमं ॥ २२ ॥`,
-    time: 255,
-    meaning: `I pay my obeisance to Vishnu, the Victorious, the All-pervading One, the Mighty, the Lord of all, the enemy of the demons of many forms and the Best of Persons.`,
+    mantra: `कटितटपीत दुकूलविचित्र मयुखतिरस्कृत चन्द्ररुचे
+    प्रणतसुरासुर मौलिमणिस्फुर दंशुलसन्नख चन्द्ररुचे
+    जितकनकाचल मौलिमदोर्जित निर्भरकुञ्जर कुम्भकुचे
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १६ ॥`,
+    english: `Kattitatta-Piita Dukuula-Vicitra Mayukha-Tiraskrta Candra-Ruce
+    Prannata-Suraasura Mouli-Manni-Sphura d-Amshula-Sannakha Candra-Ruce
+    Jita-Kanaka-[A]cala Mouli-Mado[a-Uu]rjita Nirbhara-Kun.jara Kumbha-Kuce
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 16 ||`,
+    time: 615.8,
+    meaning:``,
   },
   {
-    mantra: ``,
-    time: 264,
-    meaning: ``,
+    mantra: `विजितसहस्रकरैक सहस्रकरैक सहस्रकरैकनुते
+    कृतसुरतारक सङ्गरतारक सङ्गरतारक सूनुसुते ।
+    सुरथसमाधि समानसमाधि समाधिसमाधि सुजातरते ।
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १७ ॥`,
+    english: `Vijita-Sahasra-Karaika Sahasra-Karaika Sahasra-Karaika-Nute
+    Krta-Sura-Taaraka Sanggara-Taaraka Sanggara-Taaraka Suunu-Sute |
+    Suratha-Samaadhi Samaana-Samaadhi Samaadhi-Samaadhi Sujaata-Rate |
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 17 ||`,
+    time: 656,
+    meaning:``,
+  },
+  {
+    mantra: `पदकमलं करुणानिलये वरिवस्यति योऽनुदिनं सुशिवे
+    अयि कमले कमलानिलये कमलानिलयः स कथं न भवेत् ।
+    तव पदमेव परम्पदमित्यनुशीलयतो मम किं न शिवे
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १८ ॥`,
+    english: `Pada-Kamalam Karunnaa-Nilaye Varivasyati Yo-[A]nudinam Su-Shive
+    Ayi Kamale Kamalaa-Nilaye Kamalaa-Nilayah Sa Katham Na Bhavet |
+    Tava Padam-Eva Param-Padam-Ity-Anushiilayato Mama Kim Na Shive
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 18 ||`,
+    time: 702.8,
+    meaning:``,
+  },
+  {
+    mantra: `कनकलसत्कलसिन्धुजलैरनुषिञ्चति तेगुणरङ्गभुवम्
+    भजति स किं न शचीकुचकुम्भतटीपरिरम्भसुखानुभवम् ।
+    तव चरणं शरणं करवाणि नतामरवाणि निवासि शिवम्
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ १९ ॥`,
+    english: `Kanaka-Lasat-Kala-Sindhu-Jalair-Anussin.cati Te-Gunna-Rangga-Bhuvam
+    Bhajati Sa Kim Na Shacii-Kuca-Kumbha-Tattii-Parirambha-Sukha-[A]nubhavam |
+    Tava Carannam Sharannam Kara-Vaanni Nata-Amara-Vaanni Nivaasi Shivam
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 19 ||`,
+    time: 746.3,
+    meaning:``,
+  },
+  {
+    mantra: `तव विमलेन्दुकुलं वदनेन्दुमलं सकलं ननु कूलयते
+    किमु पुरुहूतपुरीन्दु मुखी सुमुखीभिरसौ विमुखीक्रियते ।
+    मम तु मतं शिवनामधने भवती कृपया किमुत क्रियते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ २० ॥`,
+    english: `Tava Vimale[a-I]ndu-Kulam Vadane[a-I]ndu-Malam Sakalam Nanu Kuula-Yate
+    Kimu Puruhuuta-Purii-Indu Mukhii Sumukhiibhir-Asou Vimukhii-Kriyate |
+    Mama Tu Matam Shiva-Naama-Dhane Bhavatii Krpayaa Kimuta Kriyate
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 20 ||`,
+    time: 786,
+    meaning:``,
+  },
+  {
+    mantra: `अयि मयि दीन दयालुतया कृपयैव त्वया भवितव्यमुमे
+    अयि जगतो जननी कृपयासि यथासि तथानुमितासिरते ।
+    यदुचितमत्र भवत्युररीकुरुतादुरुतापमपाकुरुते
+    जय जय हे महिषासुरमर्दिनि रम्यकपर्दिनि शैलसुते ॥ २१ ॥`,
+    english: `Ayi Mayi Diina Dayaalu-Tayaa Krpaya-Iva Tvayaa Bhavitavyam-Ume
+    Ayi Jagato Jananii Krpayaasi Yathaasi Tathanu-mita-Asira-Te |
+    Yad-Ucitam-Atra Bhavatyurarii-Kurutaa-Duru-Taapam-Apaakurute
+    Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 21 ||`,
+    time: 832.5,
+    meaning:``,
   },
 ];
 

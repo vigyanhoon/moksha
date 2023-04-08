@@ -1,8 +1,8 @@
 import { mantras } from './text';
-import mp3 from '../../../assets/vishnu_sahasranamam.mp3'
+import mp3 from '../../../assets/aigiri_nandini1.mp3'
 import { Mantra } from '../Mantra';
 import { createUseStyles } from 'react-jss';
-import usePlayer from '../../usePlayer';
+import usePlayer from '../usePlayer';
 import { Controller } from '../Controller';
 
 const useStyles = createUseStyles({
