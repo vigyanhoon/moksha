@@ -1,5 +1,9 @@
 import { createUseStyles } from 'react-jss'
-import { play as playIcon, pause, loop, unloop } from '../../assets'
+// import { play as playIcon, pause, loop, unloop } from '../assets'
+import playIcon from '../assets/play.png'
+import pause from '../assets/pause.png'
+import loop from '../assets/loop.png'
+import unloop from '../assets/stop.png'
 
 const useStyles = createUseStyles({
   container: {

@@ -8,45 +8,42 @@ import VishnuSahasranama from './views/VishnuSahasranama'
 import MahisasurMardini from './views/MahisasurMardini'
 
 const useStyles = createUseStyles({
-  app: {
-    textAlign: 'center',
-    backgroundColor: '#FFCC99'
+  center: {
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'column'
   },
-  container: {
-    overflowY: 'scroll',
-    height: 'calc(100vh - 50px)'
-  }
 })
 
-const List = ()=> {
+const List = () => {
+  const classes = useStyles()
+
   return (
-    <>
-    <div><Link to={`VishnuSahasranama`}>VishnuSahasranama</Link></div>
-    <div><Link to={`MahisasurMardini`}>MahisasurMardini</Link></div>
-    </>
+    <div className={classes.center}>
+      <h1><Link to={`VishnuSahasranama`}>VishnuSahasranama</Link></h1>
+      <h1><Link to={`MahisasurMardini`}>MahisasurMardini</Link></h1>
+    </div>
   )
 }
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <List/>,
+    element: <List />,
   },
   {
     path: "/VishnuSahasranama",
-    element: <VishnuSahasranama/>,
+    element: <VishnuSahasranama />,
   },
   {
     path: "/MahisasurMardini",
-    element: <MahisasurMardini/>,
+    element: <MahisasurMardini />,
   },
 ]);
 
 const App = () => {
-  const classes = useStyles()
-
   return (
-      <RouterProvider router={router} />
+    <RouterProvider router={router} />
   )
 }
 
