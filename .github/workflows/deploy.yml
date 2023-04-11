@@ -28,7 +28,7 @@ jobs:
     - name: Build
       run: |
         cd web
-        npm install
+        npx yarn
         npx yarn build
         
     - name: Deploy 🚀
