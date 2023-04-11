@@ -35,15 +35,15 @@ jobs:
       run: npm install
       
     - name: Build
-    run: npm run build
+      run: npm run build
     
     - name: Setup Pages
       uses: actions/configure-pages@v3
     
     - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: './dist'
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: './dist'
 
     - name: Build
       run: |
@@ -52,5 +52,5 @@ jobs:
         npx yarn build
         
     - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+      id: deployment
+      uses: actions/deploy-pages@v1
