@@ -33,9 +33,11 @@ jobs:
     
     - name: Install dependencies
       run: npm install
+      working-directory: web
       
     - name: Build
       run: npm run build
+      working-directory: web
     
     - name: Setup Pages
       uses: actions/configure-pages@v3
@@ -44,12 +46,6 @@ jobs:
       uses: actions/upload-pages-artifact@v1
       with:
         path: './dist'
-
-    - name: Build
-      run: |
-        cd web
-        npx yarn
-        npx yarn build
         
     - name: Deploy to GitHub Pages
       id: deployment
