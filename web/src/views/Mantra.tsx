@@ -21,6 +21,7 @@ export const Mantra = ({ mantra, currentPlaying, index, play }: MType) => {
     const classes = useStyles()
     const m = mantra.mantra
     const parts = m.split('। ')
+    console.log(currentPlaying)
 
     const color = currentPlaying === index ? 'red' : ''
 

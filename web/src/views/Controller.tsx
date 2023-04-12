@@ -4,6 +4,7 @@ import playIcon from '../assets/play.png'
 import pause from '../assets/pause.png'
 import loop from '../assets/loop.png'
 import unloop from '../assets/stop.png'
+import { useEffect } from 'react'
 
 const useStyles = createUseStyles({
   container: {
@@ -26,6 +27,12 @@ interface CType {
 
 export const Controller = ({ play, stop, playing, looping, setLooping }: CType) => {
   const classes = useStyles()
+
+  useEffect(()=>{
+    return ()=>{
+      stop()
+    }
+  }, [])
 
   return (
         <div className={classes.container}>
