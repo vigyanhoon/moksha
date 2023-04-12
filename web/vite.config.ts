@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react-swc'
 // https://vitejs.dev/config/
 const config:UserConfigExport = {
   plugins: [react()],
-  base: '/Moksha'
+  base: '/moksha'
 }
 
 export default defineConfig(config)

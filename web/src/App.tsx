@@ -26,7 +26,7 @@ const List = () => {
   )
 }
 
-const base = '/Moksha'
+const base = '/moksha'
 
 const router = createBrowserRouter([
   {
