@@ -26,17 +26,19 @@ const List = () => {
   )
 }
 
+const base = '/Moksha'
+
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: base,
     element: <List />,
   },
   {
-    path: "/VishnuSahasranama",
+    path: base + "/VishnuSahasranama",
     element: <VishnuSahasranama />,
   },
   {
-    path: "/MahisasurMardini",
+    path: base + "/MahisasurMardini",
     element: <MahisasurMardini />,
   },
 ]);
