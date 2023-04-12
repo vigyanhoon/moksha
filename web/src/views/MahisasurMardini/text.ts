@@ -15,7 +15,7 @@ const mantras: MantraType[] = [
     Giri-Vara-Vindhya-Shiro-[A]dhi-Nivaasini Vissnnu-Vilaasini Jissnnu-Nute |
     Bhagavati He Shiti-Kannttha-Kuttumbini Bhuri-Kuttumbini Bhuri-Krte
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 1 ||`,
-    time: 0,
+    time: 4,
     meaning:``,
   },
   {
@@ -27,7 +27,7 @@ const mantras: MantraType[] = [
     Tribhuvana-Possinni Shangkara-Tossinni Kilbissa-Mossinni Ghossa-Rate
     Danuja-Nirossinni Diti-Suta-Rossinni Durmada-Shossinni Sindhu-Sute
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 2 ||`,
-    time: 47,
+    time: 47.5,
     meaning:``,
   },
   {
@@ -39,7 +39,7 @@ const mantras: MantraType[] = [
     Shikhari Shiro-Manni Tungga-Himalaya Shrngga-Nija-[Aa]laya Madhya-Gate |
     Madhu-Madhure Madhu-Kaittabha-Gan.jini Kaittabha-Bhan.jini Raasa-Rate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 3 ||`,
-    time: 90,
+    time: 90.5,
     meaning:``,
   },
   {
@@ -51,7 +51,7 @@ const mantras: MantraType[] = [
     Ripu-Gaja-Ganndda Vidaaranna-Canndda Paraakrama-Shunndda Mrga-[A]dhipate |
     Nija-Bhuja-Danndda Nipaatita-Khanndda Vipaatita-Munndda Bhatta-[A]dhipate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 4 ||`,
-    time: 137,
+    time: 137.3,
     meaning:``,
   },
   {
@@ -88,7 +88,7 @@ const mantras: MantraType[] = [
     Shiva-Shiva-Shumbha Nishumbha-Mahaahava Tarpita-Bhuta Pishaaca-Rate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 7 ||
     `,
-    time: 264.5,
+    time: 264.9,
     meaning:``,
   },
   {
