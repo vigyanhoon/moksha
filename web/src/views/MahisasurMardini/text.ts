@@ -1,11 +1,6 @@
-export type MantraType = {
-  mantra: string;
-  english: string;
-  time: number;
-  meaning: string;
-};
+import { MantraType } from "../../types";
 
-const mantras: MantraType[] = [
+const text: MantraType[] = [
   {
     mantra: `अयि गिरिनन्दिनि नन्दितमेदिनि विश्वविनोदिनि नन्दिनुते
     गिरिवरविन्ध्यशिरोऽधिनिवासिनि विष्णुविलासिनि जिष्णुनुते ।
@@ -16,7 +11,7 @@ const mantras: MantraType[] = [
     Bhagavati He Shiti-Kannttha-Kuttumbini Bhuri-Kuttumbini Bhuri-Krte
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 1 ||`,
     time: 4,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `सुरवरवर्षिणि दुर्धरधर्षिणि दुर्मुखमर्षिणि हर्षरते
@@ -28,7 +23,7 @@ const mantras: MantraType[] = [
     Danuja-Nirossinni Diti-Suta-Rossinni Durmada-Shossinni Sindhu-Sute
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 2 ||`,
     time: 47.5,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `अयि जगदम्ब मदम्ब कदम्ब वनप्रियवासिनि हासरते
@@ -40,7 +35,7 @@ const mantras: MantraType[] = [
     Madhu-Madhure Madhu-Kaittabha-Gan.jini Kaittabha-Bhan.jini Raasa-Rate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 3 ||`,
     time: 90.5,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `अयि शतखण्ड विखण्डितरुण्ड वितुण्डितशुण्द गजाधिपते
@@ -52,7 +47,7 @@ const mantras: MantraType[] = [
     Nija-Bhuja-Danndda Nipaatita-Khanndda Vipaatita-Munndda Bhatta-[A]dhipate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 4 ||`,
     time: 137.3,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `अयि रणदुर्मद शत्रुवधोदित दुर्धरनिर्जर शक्तिभृते
@@ -64,7 +59,7 @@ const mantras: MantraType[] = [
     Durita-Duriiha Duraashaya-Durmati Daanava-Duta Krtaanta-Mate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 5 ||`,
     time: 178.5,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `अयि शरणागत वैरिवधुवर वीरवराभय दायकरे
@@ -76,7 +71,7 @@ const mantras: MantraType[] = [
     Dumi-Dumi-Taamara Dhundubhi-Naadam-Aho-Mukhariikrta Dingma-Kare
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 6 ||`,
     time: 221.5,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `अयि निजहुङ्कृति मात्रनिराकृत धूम्रविलोचन धूम्रशते
@@ -89,7 +84,7 @@ const mantras: MantraType[] = [
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 7 ||
     `,
     time: 264.9,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `धनुरनुषङ्ग रणक्षणसङ्ग परिस्फुरदङ्ग नटत्कटके
@@ -101,7 +96,7 @@ const mantras: MantraType[] = [
     Krta-Caturangga Bala-Kssiti-Rangga Ghattad-Bahu-Rangga Rattad-Battuke
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 8 ||`,
     time: 308,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `सुरललना ततथेयि तथेयि कृताभिनयोदर नृत्यरते
@@ -113,7 +108,7 @@ const mantras: MantraType[] = [
     Dhudhukutta Dhukkutta Dhimdhimita Dhvani Dhiira Mrdamga Ninaada-Rate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 9 ||`,
     time: 351,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `जय जय जप्य जयेजयशब्द परस्तुति तत्परविश्वनुते
@@ -125,7 +120,7 @@ const mantras: MantraType[] = [
     Nattita Nattaardha Nattii Natta Naayaka Naattita-Naattya Su-Gaana-Rate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 10 ||`,
     time: 354.5,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `अयि सुमनःसुमनःसुमनः सुमनःसुमनोहरकान्तियुते
@@ -137,7 +132,7 @@ const mantras: MantraType[] = [
     Sunayana-Vi-Bhramara Bhramara-Bhramara Bhramara-Bhramara-[A]dhipate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 11 ||`,
     time: 394.5,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `सहितमहाहव मल्लमतल्लिक मल्लितरल्लक मल्लरते
@@ -149,7 +144,7 @@ const mantras: MantraType[] = [
     Shita-Krta-Phulla Samullasita-[A]runna Tallaja-Pallava Sal-Lalite
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 12 ||`,
     time: 441,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `अविरलगण्ड गलन्मदमेदुर मत्तमतङ्ग जराजपते
@@ -161,7 +156,7 @@ const mantras: MantraType[] = [
     Ayi Sudatii-Jana Laalasa-Maanasa Mohana Manmatha-Raaja-Sute
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 13 ||`,
     time: 484.7,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `कमलदलामल कोमलकान्ति कलाकलितामल भाललते
@@ -173,7 +168,7 @@ const mantras: MantraType[] = [
     Alikula-Sangkula Kuvalaya-Mannddala Mouli-Milad-Bakula-Ali-Kule
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 14 ||`,
     time: 528,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `करमुरलीरव वीजितकूजित लज्जितकोकिल मञ्जुमते
@@ -185,7 +180,7 @@ const mantras: MantraType[] = [
     Nija-Ganna-Bhuuta Mahaa-Shabarii-Ganna Sad-Gunna-Sambhrta Keli-Tale
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 15 ||`,
     time: 571.4,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `कटितटपीत दुकूलविचित्र मयुखतिरस्कृत चन्द्ररुचे
@@ -197,7 +192,7 @@ const mantras: MantraType[] = [
     Jita-Kanaka-[A]cala Mouli-Mado[a-Uu]rjita Nirbhara-Kun.jara Kumbha-Kuce
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 16 ||`,
     time: 615.8,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `विजितसहस्रकरैक सहस्रकरैक सहस्रकरैकनुते
@@ -209,7 +204,7 @@ const mantras: MantraType[] = [
     Suratha-Samaadhi Samaana-Samaadhi Samaadhi-Samaadhi Sujaata-Rate |
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 17 ||`,
     time: 656,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `पदकमलं करुणानिलये वरिवस्यति योऽनुदिनं सुशिवे
@@ -221,7 +216,7 @@ const mantras: MantraType[] = [
     Tava Padam-Eva Param-Padam-Ity-Anushiilayato Mama Kim Na Shive
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 18 ||`,
     time: 702.8,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `कनकलसत्कलसिन्धुजलैरनुषिञ्चति तेगुणरङ्गभुवम्
@@ -233,7 +228,7 @@ const mantras: MantraType[] = [
     Tava Carannam Sharannam Kara-Vaanni Nata-Amara-Vaanni Nivaasi Shivam
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 19 ||`,
     time: 746.3,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `तव विमलेन्दुकुलं वदनेन्दुमलं सकलं ननु कूलयते
@@ -245,7 +240,7 @@ const mantras: MantraType[] = [
     Mama Tu Matam Shiva-Naama-Dhane Bhavatii Krpayaa Kimuta Kriyate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 20 ||`,
     time: 786,
-    meaning:``,
+    meaning: ``,
   },
   {
     mantra: `अयि मयि दीन दयालुतया कृपयैव त्वया भवितव्यमुमे
@@ -257,8 +252,8 @@ const mantras: MantraType[] = [
     Yad-Ucitam-Atra Bhavatyurarii-Kurutaa-Duru-Taapam-Apaakurute
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 21 ||`,
     time: 832.5,
-    meaning:``,
+    meaning: ``,
   },
 ];
 
-export { mantras };
+export default text;

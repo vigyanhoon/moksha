@@ -1,17 +1,17 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
-import { mantras, MantraType } from './VishnuSahasranama/text';
+import { useState, useEffect, useRef } from 'react';
+import { MantraType } from '../types';
 
-export default function usePlayer(audio: HTMLAudioElement) {
+export default function usePlayer(audio: HTMLAudioElement, texts: MantraType[]) {
     const [currentPlaying, setCurrentPlaying] = useState(0)
     const [playing, setPlaying] = useState(false)
     const [looping, setLooping] = useState(false)
 
     const index = useRef(0)
-    const currentTime = mantras[index.current]?.time
-    const nextTime = mantras[index.current + 1]?.time
 
-    const handleEvent = useCallback(() => {
-        if(!currentTime) return
+    const handleEvent = () => {
+        const currentTime = texts[index.current]?.time
+        const nextTime = texts[index.current + 1]?.time
+        if (!currentTime) return
 
         if (audio.currentTime > nextTime) {
             if (looping) {
@@ -21,18 +21,17 @@ export default function usePlayer(audio: HTMLAudioElement) {
                 setCurrentPlaying(index.current)
             }
         }
-    }, [looping, audio, currentTime, nextTime])
+    }
 
     useEffect(() => {
         audio.addEventListener('timeupdate', handleEvent);
 
         return () => audio.removeEventListener('timeupdate', handleEvent);
-    }, [looping, audio, handleEvent])
+    }, [looping, audio])
 
     const play = (m?: MantraType) => {
         if (m?.mantra) {
-            console.log(m.time)
-            const i = mantras.indexOf(m)
+            const i = texts.indexOf(m)
             index.current = i
             setCurrentPlaying(i)
             audio.currentTime = m.time

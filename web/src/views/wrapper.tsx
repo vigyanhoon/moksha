@@ -1,9 +1,8 @@
-import { mantras } from './text';
-import mp3 from '../../assets/aigiri_nandini1.mp3'
-import { Mantra } from '../Mantra';
+import { Mantra } from './Mantra';
 import { createUseStyles } from 'react-jss';
-import usePlayer from '../usePlayer';
-import { Controller } from '../Controller';
+import usePlayer from './usePlayer';
+import { Controller } from './Controller';
+import { MantraType } from '../types';
 
 const useStyles = createUseStyles({
   app: {
@@ -16,11 +15,14 @@ const useStyles = createUseStyles({
   }
 })
 
-const audio = new Audio(mp3)
+interface WrapperType {
+  audio: HTMLAudioElement;
+  texts: MantraType[]
+}
 
-function App() {
+function Wrapper({ texts, audio }: WrapperType) {
   const classes = useStyles()
-  const { currentPlaying, play, stop, playing, looping, setLooping } = usePlayer(audio)
+  const { currentPlaying, play, stop, playing, looping, setLooping } = usePlayer(audio, texts)
 
   const props = { currentPlaying, play, playing, stop, looping, setLooping }
 
@@ -28,7 +30,7 @@ function App() {
     <div className={classes.app}>
       <Controller {...props} />
       <div className={classes.container}>
-        {mantras.map((m, i) => (
+        {texts.map((m, i) => (
           <Mantra key={i} mantra={m} currentPlaying={currentPlaying} index={i} play={play} />
         ))}
       </div>
@@ -36,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default Wrapper;
