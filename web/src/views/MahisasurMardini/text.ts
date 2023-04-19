@@ -11,7 +11,21 @@ const text: MantraType[] = [
     Bhagavati He Shiti-Kannttha-Kuttumbini Bhuri-Kuttumbini Bhuri-Krte
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 1 ||`,
     time: 4,
-    meaning: ``,
+    meaning: `अयि - O
+    गिरिनन्दिनि - Girinandini - daughter of the mountain (referring to Goddess Parvati)
+    नन्दितमेदिनि - Nandita-medini - who gives joy to the earth
+    विश्वविनोदिनि - Vishva-vinodini - who gives joy to the universe
+    नन्दिनुते - Nandini-ute - praised by Nandini (another name for Goddess Parvati)
+    
+    गिरिवरविन्ध्यशिरोऽधिनिवासिनि - Girivara-vindhya-shiro-adhini-vasini - who resides on the peak of the Vindhya mountains (referring to Goddess Parvati)
+    विष्णुविलासिनि - Vishnu-vilasini - who brings delight to Lord Vishnu (another Hindu deity)
+    जिष्णुनुते - Jishnu-nute - praised by Lord Jishnu (another name for Lord Vishnu)
+
+    भगवति - Bhagavati - the Goddess
+    हे - Hey - O
+    शितिकण्ठकुटुम्बिनि - Shiti-kantha-kutumbini - who has a family of noble warriors (referring to Goddess Parvati)
+    भूरिकुटुम्बिनि - Bhuri-kutumbini - who has a large family
+    भूरिकृते - Bhuri-krite - who creates abundantly`,
   },
   {
     mantra: `सुरवरवर्षिणि दुर्धरधर्षिणि दुर्मुखमर्षिणि हर्षरते
@@ -23,7 +37,20 @@ const text: MantraType[] = [
     Danuja-Nirossinni Diti-Suta-Rossinni Durmada-Shossinni Sindhu-Sute
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 2 ||`,
     time: 47.5,
-    meaning: ``,
+    meaning: `सुरवरवर्षिणि - Suravara-varshini - who showers the best boons upon the devas (gods)
+    दुर्धरधर्षिणि - Durdhara-dharshini - who is difficult to be withstood by the demons (asura)
+    दुर्मुखमर्षिणि - Durmukha-marshini - who destroys the wickedness and arrogance of evil-minded people
+    हर्षरते - Harsha-rate - who brings delight and joy
+    
+    त्रिभुवनपोषिणि - Tribhuvana-poshini - who nourishes and sustains the three worlds (earth, heaven, and the netherworld)
+    शङ्करतोषिणि - Shankara-toshini - who pleases Lord Shiva (another Hindu deity)
+    किल्बिषमोषिणि - Kilbisha-moshini - who removes the impurities and sins
+    घोषरते - Ghosha-rate - who is full of divine radiance and splendor
+    
+    दनुजनिरोषिणि - Danuja-niroshini - who destroys the rage and anger of demons (asura)
+    दितिसुतरोषिणि - Diti-suta-roshini - who subdues the anger of the mother of demons (Diti)
+    दुर्मदशोषिणि - Durmada-shoshini - who subdues the arrogance and ego of the wicked
+    सिन्धुसुते - Sindhu-sute - daughter of the ocean (referring to Goddess Parvati)`,
   },
   {
     mantra: `अयि जगदम्ब मदम्ब कदम्ब वनप्रियवासिनि हासरते
@@ -35,7 +62,23 @@ const text: MantraType[] = [
     Madhu-Madhure Madhu-Kaittabha-Gan.jini Kaittabha-Bhan.jini Raasa-Rate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 3 ||`,
     time: 90.5,
-    meaning: ``,
+    meaning: `अयि - O!
+    जगदम्ब - Jagadamba - Mother of the Universe
+    मदम्ब - Madamba - the one who is pleased and delighted
+    कदम्ब - Kadamba - a tree, symbolizing beauty and grace
+    वनप्रियवासिनि - Vanapriya-vasini - the one who resides in the forest and loves nature
+    हासरते - Hasa-rate - who smiles and brings happiness
+    
+    शिखरि - Shikhari - the peak of the mountain
+    शिरोमणि - Shiromani - who is the crown jewel
+    तुङ्गहिमलय - Tungahimalaya - the mighty Himalayas
+    शृङ्गनिजालय - Shringanijalaya - the one who dwells in the cave of the mountain
+    मध्यगते - Madhyagate - who is present in the center
+    
+    मधुमधुरे - Madhumadhure - the sweetness of honey
+    मधुकैटभगञ्जिनि - Madhukaitabhaganjini - who destroyed the demons Madhu and Kaitabha
+    कैटभभञ्जिनि - Kaitabh-bhajini - who shattered the arrogance of the demon Kaitabh
+    रासरते - Rasarate - who takes pleasure in dance and music`,
   },
   {
     mantra: `अयि शतखण्ड विखण्डितरुण्ड वितुण्डितशुण्द गजाधिपते
@@ -47,7 +90,27 @@ const text: MantraType[] = [
     Nija-Bhuja-Danndda Nipaatita-Khanndda Vipaatita-Munndda Bhatta-[A]dhipate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 4 ||`,
     time: 137.3,
-    meaning: ``,
+    meaning: `अयि (ayi) - Oh!
+    शतखण्ड (shata-khanda) - having a hundred (shata) pieces or forms (khanda)
+    विखण्डित (vikhandita) - shattered, broken
+    रुण्ड (runda) - tusk, horn
+    वितुण्डित (vitundita) - broken into pieces, shattered
+    शुण्ड (shunda) - trunk (of an elephant)
+    गजाधिपते (gaja-adhipate) - Oh, Lord of elephants (gaja)
+    
+    रिपुगजगण्ड (ripu-gaja-ganda) - the trunk (ganda) of the enemy (ripu) elephants (gaja)
+    विदारण (vidarana) - tearing apart, splitting open
+    चण्ड (chanda) - fierce, violent
+    पराक्रम (parakrama) - prowess, valor
+    शुण्ड (shunda) - trunk (of an elephant)
+    मृगाधिपते (mriga-adhipate) - Oh, Lord of beasts (mriga)
+    
+    निजभुजदण्ड (nija-bhuja-danda) - the staff (danda) held in one's own (nija) hand (bhuja)
+    निपातित (nipatita) - fallen, thrown down
+    खण्ड (khanda) - piece, fragment
+    विपातित (vipatita) - shattered, broken
+    मुण्ड (munda) - head (without hair)
+    भटाधिपते (bhata-adhipate) - Oh, Lord of soldiers (bhata) or warriors.`,
   },
   {
     mantra: `अयि रणदुर्मद शत्रुवधोदित दुर्धरनिर्जर शक्तिभृते
@@ -59,7 +122,27 @@ const text: MantraType[] = [
     Durita-Duriiha Duraashaya-Durmati Daanava-Duta Krtaanta-Mate
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 5 ||`,
     time: 178.5,
-    meaning: ``,
+    meaning: `अयि - Oh!
+    रणदुर्मद - Mad with the desire for battle
+    शत्रुवध - Enemy-slayer
+    उदित - Arising
+    दुर्धर - Invincible
+    निर्जर - Constantly flowing
+    शक्तिभृते - Possessor of power
+    
+    चतुर - Intelligent
+    विचार - Thoughts
+    धुरीण - Bearing
+    महाशिव - Great Shiva
+    दूतकृत - Commissioned by messengers
+    प्रमथाधिपते - Lord of the host of ghosts
+    
+    दुरित - Sin
+    दुरीह - Difficult to overcome
+    दुराशय - Evil desires
+    दुर्मति - Evil-mindedness
+    दानवदुत - Messenger of the demons
+    कृतान्तमते - One who has brought an end to (their) existence.`,
   },
   {
     mantra: `अयि शरणागत वैरिवधुवर वीरवराभय दायकरे
@@ -71,7 +154,19 @@ const text: MantraType[] = [
     Dumi-Dumi-Taamara Dhundubhi-Naadam-Aho-Mukhariikrta Dingma-Kare
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 6 ||`,
     time: 221.5,
-    meaning: ``,
+    meaning: `अयि - Oh
+    शरणागत - seeker of refuge
+    वैरिवधुवर - enemy of the demon Vairi
+    वीरवराभय - giver of the highest courage
+    दायकरे - bestower
+    त्रिभुवनमस्तक - one who is adored by the three worlds
+    शूलविरोधि - one who opposes the trident (i.e. Lord Shiva)
+    शिरोऽधिकृता - one who is superior to even the head
+    मलशूलकरे - one who wields the spear of impurity
+    दुमिदुमितामर - the devas who create a sound like "dumidumi"
+    धुन्दुभिनाद - the sound of the dundhubhi (a type of drum)
+    महोमुखरीकृत - whose mouth is made to appear great
+    दिङ्मकरे - one who creates a loud noise`,
   },
   {
     mantra: `अयि निजहुङ्कृति मात्रनिराकृत धूम्रविलोचन धूम्रशते
@@ -84,7 +179,19 @@ const text: MantraType[] = [
     Jaya Jaya He Mahissaasura-Mardini Ramya-Kapardini Shaila-Sute || 7 ||
     `,
     time: 264.9,
-    meaning: ``,
+    meaning: `अयि (ayi) - Oh
+    निजहुङ्कृति (nijahunkriti) - own roar
+    मात्रनिराकृत (matranirakrita) - beyond measure
+    धूम्रविलोचन (dhoomravilocana) - smoky-eyed
+    धूम्रशते (dhoomrashate) - covered with smoke
+    समरविशोषित (samara vishoshita) - dried up in battle
+    शोणितबीज (shonita bija) - seeds of blood
+    समुद्भवशोणित (samudbhava shonita) - born of blood
+    बीजलते (bijalate) - covered in seeds
+    शिवशिवशुम्भ (shivashivashumbha) - Shiva-Shiva-Shumbha
+    निशुम्भमहाहव (nishumbha mahaahava) - Nishumbha with great pride
+    तर्पितभूत (tarpita bhoota) - pleased
+    पिशाचरते (pishaacharate) - moving like a demon.`,
   },
   {
     mantra: `धनुरनुषङ्ग रणक्षणसङ्ग परिस्फुरदङ्ग नटत्कटके

@@ -1,34 +1,66 @@
 import { createUseStyles } from 'react-jss'
 import { MantraType } from '../types'
+import info from '../assets/info.png'
+import { useState } from 'react'
 
 const useStyles = createUseStyles({
+    container: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    info: {
+        width: '50px',
+        height: '50px'
+    },
     mantra: {
         fontSize: '1.5em',
         padding: '20px 0',
         whiteSpace: 'pre-wrap',
         userSelect: 'none',
+    },
+    meaning: {
+        fontSize: '1.5em',
+        padding: '20px',
+        whiteSpace: 'pre-wrap',
+        userSelect: 'none',
+        textAlign: 'left'
     }
 })
 
 interface MType {
-    mantra: MantraType,
+    text: MantraType,
     currentPlaying: number,
     index: number,
     play: (m: MantraType) => void
 }
 
-export const Mantra = ({ mantra, currentPlaying, index, play }: MType) => {
+export const Mantra = ({ text, currentPlaying, index, play }: MType) => {
     const classes = useStyles()
-    const m = mantra.mantra
-    const parts = m.split('। ')
+    const [showMantra, setShowMantra] = useState(false);
+    const { mantra, meaning } = text
+    const parts = mantra.split('। ')
 
     const color = currentPlaying === index ? 'red' : ''
 
+    const Row = () => {
+        if (!showMantra) {
+            return (<div onClick={() => play(text)} className={classes.mantra} style={{ color }}>
+                <div>{parts[0] + '।'}</div>
+                <div>{parts[1]}</div>
+                <div>{parts[2]}</div>
+            </div>)
+        }
+
+        return (<div onClick={() => play(text)} className={classes.meaning} style={{ color }}>
+            <div>{meaning}</div>
+        </div>)
+    }
+
     return (
-        <div onClick={() => play(mantra)} className={classes.mantra} style={{ color }}>
-            <div>{parts[0] + '।'}</div>
-            <div>{parts[1]}</div>
-            <div>{parts[2]}</div>
+        <div className={classes.container}>
+            <img className={classes.info} onClick={() => setShowMantra(!showMantra)} src={info}></img>
+            <Row />
         </div>
     )
 }

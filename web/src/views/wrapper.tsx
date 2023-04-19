@@ -31,7 +31,7 @@ function Wrapper({ texts, audio }: WrapperType) {
       <Controller {...props} />
       <div className={classes.container}>
         {texts.map((m, i) => (
-          <Mantra key={i} mantra={m} currentPlaying={currentPlaying} index={i} play={play} />
+          <Mantra key={i} text={m} currentPlaying={currentPlaying} index={i} play={play} />
         ))}
       </div>
     </div>
