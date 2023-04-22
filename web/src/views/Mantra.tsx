@@ -2,6 +2,7 @@ import { createUseStyles } from 'react-jss'
 import { MantraType } from '../types'
 import info from '../assets/info.png'
 import { useState } from 'react'
+import usePlayer from './usePlayer'
 
 const useStyles = createUseStyles({
     container: {
@@ -28,15 +29,9 @@ const useStyles = createUseStyles({
     }
 })
 
-interface MType {
-    text: MantraType,
-    currentPlaying: number,
-    index: number,
-    play: (m: MantraType) => void
-}
-
-export const Mantra = ({ text, currentPlaying, index, play }: MType) => {
+export const Mantra = ({ index, text }: { index: number, text: MantraType }) => {
     const classes = useStyles()
+    const { currentPlaying, play } = usePlayer()
     const [showMantra, setShowMantra] = useState(false);
     const { mantra, meaning } = text
     const parts = mantra.split('। ')

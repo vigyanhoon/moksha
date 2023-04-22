@@ -1,8 +1,8 @@
 import { Mantra } from './Mantra';
 import { createUseStyles } from 'react-jss';
-import usePlayer from './usePlayer';
 import { Controller } from './Controller';
-import { MantraType } from '../types';
+import { useAtom } from 'jotai';
+import { textAtom } from '../atom';
 
 const useStyles = createUseStyles({
   app: {
@@ -15,23 +15,16 @@ const useStyles = createUseStyles({
   }
 })
 
-interface WrapperType {
-  audio: HTMLAudioElement;
-  texts: MantraType[]
-}
-
-function Wrapper({ texts, audio }: WrapperType) {
+function Wrapper() {
   const classes = useStyles()
-  const { currentPlaying, play, stop, playing, looping, setLooping } = usePlayer(audio, texts)
-
-  const props = { currentPlaying, play, playing, stop, looping, setLooping }
+  const [texts] = useAtom(textAtom)
 
   return (
     <div className={classes.app}>
-      <Controller {...props} />
+      <Controller />
       <div className={classes.container}>
         {texts.map((m, i) => (
-          <Mantra key={i} text={m} currentPlaying={currentPlaying} index={i} play={play} />
+          <Mantra key={i} text={m} index={i} />
         ))}
       </div>
     </div>
