@@ -6,8 +6,6 @@ import { audioAtom, textAtom } from '../../atom';
 
 let audio = new Audio(mp3)
 
-
-
 const Parent = () => {
     const [, setAudio] = useAtom(audioAtom)
     const [, setText] = useAtom(textAtom)

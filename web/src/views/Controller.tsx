@@ -6,7 +6,7 @@ import unloop from '../assets/stop.png'
 import letterS from '../assets/letter-s.png'
 import letterE from '../assets/letter-e.png'
 import { useEffect } from 'react'
-import usePlayer from './usePlayer'
+import usePlayer, { PlayerProps } from './usePlayer'
 
 const useStyles = createUseStyles({
   container: {
@@ -19,11 +19,9 @@ const useStyles = createUseStyles({
   }
 })
 
-export const Controller = () => {
+export const Controller = ({ play, stop, playing, looping, setLooping, isEnglish, setIsEnglish }: PlayerProps) => {
+
   const classes = useStyles()
-
-  const { play, stop, playing, looping, setLooping, isEnglish, setIsEnglish } = usePlayer()
-
   useEffect(() => {
     return () => {
       stop()

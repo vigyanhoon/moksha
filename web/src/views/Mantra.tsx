@@ -2,7 +2,6 @@ import { createUseStyles } from 'react-jss'
 import { MantraType } from '../types'
 import info from '../assets/info.png'
 import { useState } from 'react'
-import usePlayer from './usePlayer'
 
 const useStyles = createUseStyles({
     container: {
@@ -11,8 +10,9 @@ const useStyles = createUseStyles({
         alignItems: 'center'
     },
     info: {
-        width: '50px',
-        height: '50px'
+        width: '25px',
+        height: '25px',
+        paddingLeft: '20px'
     },
     mantra: {
         fontSize: '1.5em',
@@ -29,13 +29,20 @@ const useStyles = createUseStyles({
     }
 })
 
-export const Mantra = ({ index, text }: { index: number, text: MantraType }) => {
-    const classes = useStyles()
-    const { currentPlaying, play } = usePlayer()
-    const [showMantra, setShowMantra] = useState(false);
-    const { mantra, meaning } = text
-    const parts = mantra.split('। ')
+interface MantraProps {
+    currentPlaying: number,
+    index: number,
+    text: MantraType,
+    play: (m: MantraType) => void
+    isEnglish: boolean,
+}
 
+export const Mantra = ({ index, text, currentPlaying, play, isEnglish }: MantraProps) => {
+    const classes = useStyles()
+    const [showMantra, setShowMantra] = useState(false);
+    const { mantra, meaning, english } = text
+    const source = isEnglish ? english : mantra
+    const parts = source.split('। ')
     const color = currentPlaying === index ? 'red' : ''
 
     const Row = () => {

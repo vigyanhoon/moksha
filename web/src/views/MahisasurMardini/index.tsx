@@ -8,8 +8,6 @@ let audio = new Audio(mp3)
 
 const Parent = (() => {
     const [, setAudio] = useAtom(audioAtom)
-
-    setAudio(audio)
     const [, setText] = useAtom(textAtom)
 
     setAudio(audio)

@@ -21,7 +21,6 @@ export default function usePlayer() {
     const [isEnglish, setIsEnglish] = useState(false)
     const [audio] = useAtom(audioAtom)
     const [texts] = useAtom(textAtom)
-
     const index = useRef(0)
 
     if (!audio) throw new Error('Audio not found')
@@ -64,7 +63,7 @@ export default function usePlayer() {
         setPlaying(false)
     }
 
-    const player: PlayerProps = {
+    return {
         currentPlaying,
         play,
         stop,
@@ -74,6 +73,4 @@ export default function usePlayer() {
         isEnglish,
         setIsEnglish
     }
-
-    return player
 }
