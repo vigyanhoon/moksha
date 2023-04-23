@@ -28,9 +28,17 @@ export const Controller = ({ play, stop, playing, looping, setLooping, isEnglish
     }
   }, [])
 
+  const playClicked = () => {
+    if (playing) {
+      stop()
+    } else {
+      play()
+    }
+  }
+
   return (
     <div className={classes.container}>
-      <img onClick={playing ? stop : play} className={classes.image} src={playing ? pause : playIcon} alt='' />
+      <img onClick={playClicked} className={classes.image} src={playing ? pause : playIcon} alt='' />
       <img onClick={() => { setLooping(!looping) }} className={classes.image} src={looping ? unloop : loop} alt='' />
       <img onClick={() => { setIsEnglish(!isEnglish) }} className={classes.image} src={isEnglish ? letterS : letterE} alt='' />
     </div>

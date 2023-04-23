@@ -5,7 +5,7 @@ import { useAtom } from 'jotai';
 
 export interface PlayerProps {
     currentPlaying: number,
-    play: (m: MantraType) => void
+    play: (m?: MantraType) => void
     stop: () => void
     playing: boolean
     looping: boolean
