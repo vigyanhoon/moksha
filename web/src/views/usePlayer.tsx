@@ -27,13 +27,19 @@ export default function usePlayer() {
 
     const handleEvent = () => {
         const currentTime = texts[index.current]?.time
+        const endTime = texts[index.current]?.endTime
         const nextTime = texts[index.current + 1]?.time
         if (!currentTime) return
 
-        if (audio.currentTime > nextTime) {
-            if (looping) {
+        if (looping) {
+            const end = endTime ? endTime : nextTime
+
+            if (audio.currentTime > end) {
                 audio.currentTime = currentTime
-            } else {
+            }
+        }
+        else {
+            if (audio.currentTime > nextTime) {
                 index.current++
                 setCurrentPlaying(index.current)
             }

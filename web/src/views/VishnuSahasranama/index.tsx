@@ -1,4 +1,4 @@
-import Wrapper from '../wrapper'
+import Wrapper from '../Wrapper'
 import mp3 from '../../assets/vishnu_sahasranamam.mp3'
 import texts from './text';
 import { useAtom } from 'jotai'

@@ -1,4 +1,4 @@
-import Wrapper from '../wrapper'
+import Wrapper from '../Wrapper'
 import mp3 from '../../assets/aigiri_nandini1.mp3'
 import texts from './text';
 import { useAtom } from 'jotai'
