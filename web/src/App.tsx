@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import VishnuSahasranama from './views/VishnuSahasranama'
 import MahisasurMardini from './views/MahisasurMardini'
+import HanumanChalisa from './views/HanumanChalisa';
 
 const useStyles = createUseStyles({
   center: {
@@ -20,8 +21,9 @@ const List = () => {
 
   return (
     <div className={classes.center}>
-      <h1><Link to={`VishnuSahasranama`}>VishnuSahasranama</Link></h1>
-      <h1><Link to={`MahisasurMardini`}>MahisasurMardini</Link></h1>
+      <h1><Link to={`VishnuSahasranama`}>Vishnu Sahasranama</Link></h1>
+      <h1><Link to={`MahisasurMardini`}>Mahisasur Mardini</Link></h1>
+      <h1><Link to={`HanumanChalisa`}>Hanuman Chalisa</Link></h1>
     </div>
   )
 }
@@ -40,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: base + "/MahisasurMardini",
     element: <MahisasurMardini />,
+  },
+  {
+    path: base + "/HanumanChalisa",
+    element: <HanumanChalisa />,
   },
 ]);
 
