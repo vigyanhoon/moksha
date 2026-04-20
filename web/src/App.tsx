@@ -1,34 +1,40 @@
-import { createUseStyles } from 'react-jss'
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Link
-} from "react-router-dom";
-import VishnuSahasranama from './views/VishnuSahasranama'
-import MahisasurMardini from './views/MahisasurMardini'
-import HanumanChalisa from './views/HanumanChalisa';
+import { createUseStyles } from "react-jss";
+import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+import VishnuSahasranama from "./views/VishnuSahasranama";
+import MahisasurMardini from "./views/MahisasurMardini";
+import HanumanChalisa from "./views/HanumanChalisa";
+import ShivTandavStrota from "./views/ShivTandavStrota";
 
 const useStyles = createUseStyles({
   center: {
-    display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'column'
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column",
   },
-})
+});
 
 const List = () => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <div className={classes.center}>
-      <h1><Link to={`VishnuSahasranama`}>Vishnu Sahasranama</Link></h1>
-      <h1><Link to={`MahisasurMardini`}>Mahisasur Mardini</Link></h1>
-      <h1><Link to={`HanumanChalisa`}>Hanuman Chalisa</Link></h1>
+      <h1>
+        <Link to={`VishnuSahasranama`}>Vishnu Sahasranama</Link>
+      </h1>
+      <h1>
+        <Link to={`MahisasurMardini`}>Mahisasur Mardini</Link>
+      </h1>
+      <h1>
+        <Link to={`HanumanChalisa`}>Hanuman Chalisa</Link>
+      </h1>
+      <h1>
+        <Link to={`ShivTandavStrota`}>Shiv Tandav Strota</Link>
+      </h1>
     </div>
-  )
-}
+  );
+};
 
-const base = '/moksha'
+const base = "/moksha";
 
 const router = createBrowserRouter([
   {
@@ -47,12 +53,14 @@ const router = createBrowserRouter([
     path: base + "/HanumanChalisa",
     element: <HanumanChalisa />,
   },
+  {
+    path: base + "/ShivTandavStrota",
+    element: <ShivTandavStrota />,
+  },
 ]);
 
 const App = () => {
-  return (
-    <RouterProvider router={router} />
-  )
-}
+  return <RouterProvider router={router} />;
+};
 
-export default App
+export default App;
