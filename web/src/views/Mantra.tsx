@@ -50,7 +50,7 @@ export const Mantra = ({
   const { mantra, meaning, english } = text;
   const source = isEnglish ? english : mantra;
   const parts = source.split("। ");
-  const color = currentPlaying === index ? "red" : "";
+  const color = currentPlaying === index ? "#2C3E91" : "";
 
   const handleTap = () => {
     const now = Date.now();
