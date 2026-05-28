@@ -197,7 +197,7 @@ Dhvanikrama-pravartita-prachaṇḍa-tāṇḍavaḥ Śivaḥ॥`,
 दृषद्विचित्रतल्पयोर्भुजङ्गमौक्तिकस्रजोर्
 गरिष्ठरत्नलोष्ठयोः सुहृद्विपक्षपक्षयोः।
 तृणारविन्दचक्षुषोः प्रजामहीमहेन्द्रयोः
-समं प्रवृत्तिकः कदा सदाशिवं भजे ॥१२॥`,
+समं प्रवृत्तिकः कदा सदाशिवं भजाम्यहम् ॥१२॥`,
     time: 790.7,
     english: `Dṛṣad-vichitra-talpayor-bhujanga-mauktika-srajor
 Gariṣṭha-ratna-loṣṭhayoḥ suhṛd-vipakṣa-pakṣayoḥ।
