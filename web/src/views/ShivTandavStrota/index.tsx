@@ -4,7 +4,7 @@ import texts from "./text";
 import { useAtom } from "jotai";
 import { audioAtom, textAtom } from "../../atom";
 
-let audio = new Audio(mp3);
+const audio = new Audio(mp3);
 
 const Parent = () => {
   const [, setAudio] = useAtom(audioAtom);
@@ -16,4 +16,4 @@ const Parent = () => {
   return <Wrapper />;
 };
 
-export default () => <Parent />;
+export default Parent

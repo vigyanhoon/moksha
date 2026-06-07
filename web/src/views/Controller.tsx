@@ -6,7 +6,7 @@ import unloop from '../assets/stop.png'
 import letterS from '../assets/letter-s.png'
 import letterE from '../assets/letter-e.png'
 import { useEffect } from 'react'
-import usePlayer, { PlayerProps } from './usePlayer'
+import { PlayerProps } from './usePlayer'
 
 const useStyles = createUseStyles({
   container: {
@@ -26,6 +26,7 @@ export const Controller = ({ play, stop, playing, looping, setLooping, isEnglish
     return () => {
       stop()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const playClicked = () => {

@@ -1,6 +1,5 @@
 import { createUseStyles } from "react-jss";
 import { MantraType } from "../types";
-import info from "../assets/info.png";
 import { useRef, useState } from "react";
 
 const useStyles = createUseStyles({
@@ -65,8 +64,8 @@ export const Mantra = ({
     lastTap.current = now;
   };
 
-  const Row = () => {
-    return (
+  return (
+    <div className={classes.container}>
       <div onClick={handleTap}>
         <div className={classes.mantra} style={{ color }}>
           <div>{parts[0] + "।"}</div>
@@ -80,12 +79,6 @@ export const Mantra = ({
           </div>
         )}
       </div>
-    );
-  };
-
-  return (
-    <div className={classes.container}>
-      <Row />
     </div>
   );
 };
