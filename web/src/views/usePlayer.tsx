@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { MantraType } from '../types';
-import { audioAtom, textAtom } from '../atom';
-import { useAtom } from 'jotai';
 
 export interface PlayerProps {
     currentPlaying: number,
@@ -14,13 +12,11 @@ export interface PlayerProps {
     setIsEnglish: (b: boolean) => void
 }
 
-export default function usePlayer() {
+export default function usePlayer(audio: HTMLAudioElement, texts: MantraType[]) {
     const [currentPlaying, setCurrentPlaying] = useState(0)
     const [playing, setPlaying] = useState(false)
     const [looping, setLooping] = useState(false)
     const [isEnglish, setIsEnglish] = useState(false)
-    const [audio] = useAtom(audioAtom)
-    const [texts] = useAtom(textAtom)
     const index = useRef(0)
 
     if (!audio) throw new Error('Audio not found')

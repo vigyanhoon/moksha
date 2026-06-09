@@ -1,21 +1,8 @@
-import Wrapper from '../Wrapper'
 import mp3 from '../../assets/aigiri_nandini1.mp3'
 import texts from './text';
-import { useAtom } from 'jotai'
-import { audioAtom, textAtom } from '../../atom';
+import MantraPage from '../MantraPage';
 
-const audio = new Audio(mp3)
+export default function MahisasurMardini() {
+    return <MantraPage mp3={mp3} texts={texts} />;
+}
 
-const Parent = (() => {
-    const [, setAudio] = useAtom(audioAtom)
-    const [, setText] = useAtom(textAtom)
-
-    setAudio(audio)
-    setText(texts)
-
-    return <Wrapper />
-})
-
-
-
-export default Parent
