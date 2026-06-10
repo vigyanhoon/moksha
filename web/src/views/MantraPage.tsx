@@ -3,6 +3,10 @@ import { Mantra } from './Mantra';
 import { createUseStyles } from 'react-jss';
 import { Controller } from './Controller';
 import usePlayer from './usePlayer';
+import {
+    mantraConfig,
+    MantraResource,
+} from "../mantraConfig";
 
 const useStyles = createUseStyles({
     app: {
@@ -15,11 +19,25 @@ const useStyles = createUseStyles({
     }
 })
 
-const MantraPage = (resource: string) => {
-    const audio = useMemo(() => new Audio(`audio/${resource}.mp3`), [resource]);
+type Props = {
+    resource: MantraResource;
+};
+
+const MantraPage = ({ resource }: Props) => {
     const classes = useStyles()
-    const props = usePlayer(audio, `texts/${resource}.ts`)
-    const texts = `texts/${resource}.ts`
+    const selectedMantra = mantraConfig.find(
+        (m) => m.resource === resource
+    );
+
+    const audioSrc = selectedMantra?.audio ?? "";
+    const texts = selectedMantra?.text ?? [];
+
+    const audio = useMemo(
+        () => new Audio(audioSrc),
+        [audioSrc]
+    );
+
+    const props = usePlayer(audio, texts);
 
     return (
         <div className={classes.app}>
