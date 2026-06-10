@@ -1,9 +1,6 @@
 import { createUseStyles } from "react-jss";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
-import VishnuSahasranama from "./views/VishnuSahasranama";
-import MahisasurMardini from "./views/MahisasurMardini";
-import HanumanChalisa from "./views/HanumanChalisa";
-import ShivTandavStrota from "./views/ShivTandavStrota";
+import MantraPage from "./views/MantraPage";
 
 const useStyles = createUseStyles({
   center: {
@@ -13,51 +10,45 @@ const useStyles = createUseStyles({
   },
 });
 
+const base = "/moksha";
+
+const MantraConfig = [
+  { name: "Vishnu Sahasranama", resource: "vishnu_sahasranama", path: "VishnuSahasranama" },
+  { name: "Mahisasur Mardini", resource: "mahisasur_mardini", path: "MahisasurMardini" },
+  { name: "Hanuman Chalisa", resource: "hanuman_chalisa", path: "HanumanChalisa" },
+  { name: "Shiv Tandav Strota", resource: "shiv_tandav_strota", path: "ShivTandavStrota" }
+];
+
 const List = () => {
   const classes = useStyles();
 
   return (
     <div className={classes.center}>
-      <h1>
-        <Link to={`VishnuSahasranama`}>Vishnu Sahasranama</Link>
-      </h1>
-      <h1>
-        <Link to={`MahisasurMardini`}>Mahisasur Mardini</Link>
-      </h1>
-      <h1>
-        <Link to={`HanumanChalisa`}>Hanuman Chalisa</Link>
-      </h1>
-      <h1>
-        <Link to={`ShivTandavStrota`}>Shiv Tandav Strota</Link>
-      </h1>
+      {MantraConfig.map((mantra) => (
+        <h1 key={mantra.name}>
+          <Link to={`${base}/mantra/${mantra.path}`}>
+            {mantra.name}
+          </Link>
+        </h1>
+      ))}
     </div>
   );
 };
 
-const base = "/moksha";
-
-const router = createBrowserRouter([
+const routes = [
   {
     path: base,
     element: <List />,
   },
-  {
-    path: base + "/VishnuSahasranama",
-    element: <VishnuSahasranama />,
-  },
-  {
-    path: base + "/MahisasurMardini",
-    element: <MahisasurMardini />,
-  },
-  {
-    path: base + "/HanumanChalisa",
-    element: <HanumanChalisa />,
-  },
-  {
-    path: base + "/ShivTandavStrota",
-    element: <ShivTandavStrota />,
-  },
-]);
+]
+for (const mantra of MantraConfig) {
+  routes.push({
+    path: base + `/${mantra.path}`,
+    element: <MantraPage resource={mantra.resource} />,
+  });
+}
+const router = createBrowserRouter(routes);
+
 
 const App = () => {
   return <RouterProvider router={router} />;
