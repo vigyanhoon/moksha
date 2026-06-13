@@ -1,7 +1,7 @@
-import { Mantra } from './Mantra';
+import { Mantra } from '../components/Mantra';
 import { createUseStyles } from 'react-jss';
-import { Controller } from './Controller';
-import usePlayer from './usePlayer';
+import { Controller } from '../components/Controller';
+import usePlayer from '../hooks/usePlayer';
 import {
     MantraResource,
 } from "../mantraConfig";
