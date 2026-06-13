@@ -1,6 +1,6 @@
 import { createUseStyles } from "react-jss";
-import { MantraType } from "../types";
 import { useRef, useState } from "react";
+import { MantraProps } from "../types";
 
 const useStyles = createUseStyles({
   container: {
@@ -27,14 +27,6 @@ const useStyles = createUseStyles({
     textAlign: "left",
   },
 });
-
-interface MantraProps {
-  currentPlaying: number;
-  index: number;
-  text: MantraType;
-  play: (m: MantraType) => void;
-  isEnglish: boolean;
-}
 
 export const Mantra = ({
   index,
