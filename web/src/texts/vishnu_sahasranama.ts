@@ -1,4 +1,4 @@
-import { MantraType } from "../../types";
+import { MantraType } from "../types";
 
 const texts: MantraType[] = [
   {

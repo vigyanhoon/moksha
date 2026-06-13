@@ -1,4 +1,4 @@
-import { MantraType } from "../../types";
+import { MantraType } from "../types";
 
 const texts: MantraType[] = [
   {
@@ -74,7 +74,7 @@ const texts: MantraType[] = [
     time: 53,
     english: `Vidyavaan Guni Ati Chatur । Ram Kaj Karibe Ko Atur
     Prabhu Charittra Sunibe Ko Rasiya । Ram Lakhan Sita man basyia`,
-    meaning:  `You are Learned, Virtuous and Extremely Intelligent,
+    meaning: `You are Learned, Virtuous and Extremely Intelligent,
     You are always Eager to do the Works of Sri Rama.
     You Delight in Listening to the Glories of Sri Rama,
     You have Sri Rama, Sri Lakshmana and Devi Sita Dwelling in your Heart.
@@ -88,7 +88,7 @@ const texts: MantraType[] = [
     time: 63.1,
     english: `Sukshma roop Dhari Siyahi Dikhwana । Bikat roop Dhari Lank Jarawa
     Bhim roop Dhari Asur Sanhare । Ramchandra Ke kaaj Savare`,
-    meaning:  `You Appeared before Devi Sita Assuming a Diminutive Form (in Lanka),
+    meaning: `You Appeared before Devi Sita Assuming a Diminutive Form (in Lanka),
     You Assumed an Awesome Form and Burnt Lanka.
     You Assumed a Gigantic Form and Destroyed the Demons,
     Thereby Accomplishing the Task of Sri Rama.
@@ -102,7 +102,7 @@ const texts: MantraType[] = [
     time: 73.2,
     english: `Laye Sajivan Lakhan Jiyaye । Shri Raghubir harashi ur laye
     Raghupati Kinhi Bahut Badaai । Tum Mama Priya Bharat Sam Bahi.`,
-    meaning:  `You Brought the Sanjivana herb and Revived Sri Lakshmana.
+    meaning: `You Brought the Sanjivana herb and Revived Sri Lakshmana.
     Because of this Sri Rama Embraced You overflowing with Joy.
     Sri Rama Praised You Greatly,
     And said: "You are as dear to me as my brother Bharata".
@@ -116,7 +116,7 @@ const texts: MantraType[] = [
     time: 83.3,
     english: `Sahastra Badan Tumharo Jas Gaave । Asa kahi Shripati Kanth Laagave.
     Sankadik Brahmadi Muneesa । Narad Sarad Sahit Aheesa`,
-    meaning:  `The Thousand Headed Seshnag Sings Your Glory",
+    meaning: `The Thousand Headed Seshnag Sings Your Glory",
     Said Sri Rama to You taking you in his Embrace
     Sanaka and other Sages, Lord Brahma and other Gods,
     Narada, Devi Saraswati and Seshnag ...
@@ -130,7 +130,7 @@ const texts: MantraType[] = [
     time: 93.3,
     english: `Jam Kuber Digpal Jahan Te । Kabi Kobid Kahin Sake Kahan Te
     Tum Upkar Sugrivahi Keenha । Ram Milay Rajpad Deenha`,
-    meaning:  `Yama (god of death), Kubera (god of wealth), Digpalas (the guardian deities),
+    meaning: `Yama (god of death), Kubera (god of wealth), Digpalas (the guardian deities),
     Poets and Scholars have not been able to Describe Your Glories in full.
     You Rendered a great Help to Sugriva.
     You Introduced him to Sri Rama and thereby Gave back his Kingdom.
@@ -144,7 +144,7 @@ const texts: MantraType[] = [
     time: 103.5,
     english: `Tumharo Mantr Bibhishan Maana । Lankeshwar Bhaye Sab Jag Jaana
     Jug Sahastra Jojan Par Bhaanu । Leelyo Taahi Madhur Phal Jaanu`,
-    meaning:  `Vibhisana Followed your Advice,
+    meaning: `Vibhisana Followed your Advice,
     And the Whole World Knows that he became the King of Lanka.
     The Sun which was at a distance of Sixteen Thousand Miles,
     You Swallowed It (the Sun) thinking it to be a Sweet Fruit.`,
@@ -157,7 +157,7 @@ const texts: MantraType[] = [
     time: 113.6,
     english: `Prabhu Mudrika Meli Mukha Maaheen । Jaladhi Langhi Gaye Acharaj Naheen
     Durgam Kaaj Jagat Ke Jeete । Sugam Anugrah Tumhre Te Te.`,
-    meaning:  `Carrying Lord Sri Rama's Ring in your Mouth,
+    meaning: `Carrying Lord Sri Rama's Ring in your Mouth,
     You Crossed the Ocean, no Wonder in that.
     All the Difficult Tasks in this World,
     Are Rendered Easy by your Grace.
@@ -171,7 +171,7 @@ const texts: MantraType[] = [
     time: 123.7,
     english: `Ram Duware Tum Rakhavare । Hot Na Aagya Binu Paisare
     Sab Sukh Lahen Tumhari Sarna । Tum Rakshak Kaahu Ko Darnaa`,
-    meaning:  `You are the Gate-Keeper of Sri Rama's Kingdom.
+    meaning: `You are the Gate-Keeper of Sri Rama's Kingdom.
     No one can Enter without Your Permission.
     Those who take Refuge in You enjoy all Happiness.
     If You are the Protector, what is there to Fear?
@@ -185,7 +185,7 @@ const texts: MantraType[] = [
     time: 133.8,
     english: `Aapan Tej Samharo Aapei । Tinau Lok Hank Te Kanpei
     Bhoot Pisaach Nikat Nahi Avei । Mahabir Jab Naam Sunavei.`,
-    meaning:  `You alone can Control Your Great Energy.
+    meaning: `You alone can Control Your Great Energy.
     When you Roar, the Three Worlds Tremble.
     Ghosts and Evil Spirits will Not Come Near,
     When one Utters the Name of Mahavir (Hanuman).
@@ -199,7 +199,7 @@ const texts: MantraType[] = [
     time: 144,
     english: `Nasei Rog Hare Sab Peera । Japat Niranter Hanumant Beera
     Sankat Te Hanuman Chhudavei । Man Kram Bachan Dhyan Jo Lavei.`,
-    meaning:  `You Destroy Diseases and Remove all Pains,
+    meaning: `You Destroy Diseases and Remove all Pains,
     When one Utters your Name Continuously.
     Samkatt Se Hanumaan Chuddaavai |
     Man Kram Bacan Dhyaan Jo Laavai ||`,
@@ -212,7 +212,7 @@ const texts: MantraType[] = [
     time: 154,
     english: `Sub Par Ram Tapasvee Raaja । Tinke Kaaj Sakal Tum Saaja
     Aur Manorath Jo Koi Lave । Soi Amit Jivan Phal Pave.`,
-    meaning:  `Sri Rama is the King of the Tapaswis (devotees engaged in penances).
+    meaning: `Sri Rama is the King of the Tapaswis (devotees engaged in penances).
     And You (Hanuman) Fulfill all Works of Sri Rama (as a caretaker).
     Devotees who have any Other Desires,
     Will ultimately get the Highest Fruit of Life.`,
@@ -225,7 +225,7 @@ const texts: MantraType[] = [
     time: 164.1,
     english: `Charo Juung Partap Tumhara । Hai Parsiddha Jagat Ujiyara.
     Sadho Sant Ke Tum Rakhvare । Asur Nikandan Ram Dulare.`,
-    meaning:  `Your Glory prevails in all the Four Ages.
+    meaning: `Your Glory prevails in all the Four Ages.
     And your Fame Radiates throughout the World.
     You are the Saviour of the Saints and Sages.
     You Destroy the Demons, O Beloved of Sri Rama.`,
@@ -238,7 +238,7 @@ const texts: MantraType[] = [
     time: 174.2,
     english: `Ashta Siddhi Nau Nidhi Ke Data । Asa Bar Din Janki Mata
     Ram Rasayan Tumhare Pasa । Sadaa Raho Raghupati Ke Dasa.`,
-    meaning:  `You can Give the Eight Siddhis (supernatural powers) and Nine Nidhis (types of devotions).
+    meaning: `You can Give the Eight Siddhis (supernatural powers) and Nine Nidhis (types of devotions).
     Mother Janaki (Devi Sita) gave this Blessing to you.
     You hold the Essence of Devotion to Sri Rama.
     You Always Remain as the Servant of Raghupati (Sri Rama).
@@ -252,7 +252,7 @@ const texts: MantraType[] = [
     time: 184.3,
     english: `Tumhare Bhajan Ramko Pavei । Janam Janam Ke Dukh Bisravei
     Anta Kaal Raghubar Pur Jai । Jahan Janma Hari Bhakta Kahai`,
-    meaning:  `Through Devotion to You, one gets Sri Rama,
+    meaning: `Through Devotion to You, one gets Sri Rama,
     Thereby getting Free of the Sorrows of Life after Life.
     At the End one Goes to the Abode of Raghupati (Sri Rama).
     Where one is Known as the Devotee of Hari.
@@ -266,7 +266,7 @@ const texts: MantraType[] = [
     time: 194.6,
     english: `Aur Devata Chitt Na Dharai । Hanumant Sei Sarva Sukh Karai
     Sankat Kate Mitey Sab Peera । Jo Sumirei Hanumant Balbeera`,
-    meaning:  `Even without Worshipping any Other Deities,
+    meaning: `Even without Worshipping any Other Deities,
     One Gets All Happiness who Worships Sri Hanuman.
     Difficulties Disappear and Sorrows are Removed,
     For Those who Contemplate on the Powerful Sri Hanuman.
@@ -280,7 +280,7 @@ const texts: MantraType[] = [
     time: 204.7,
     english: `Jai Jai Jai Hanuman Gosai । Kripa Karahu Gurudev Ki Naiee
     Jo Sat Baar Paath Kar Koi । Chhutahi Bandi Maha Sukh Hoi.`,
-    meaning:  `Victory, Victory, Victory to You, O Hanuman,
+    meaning: `Victory, Victory, Victory to You, O Hanuman,
     Please Bestow your Grace as our Supreme Guru.
     Those who Recite this Hanuman Chalisa one hundred times (with devotion),
     Will get Freed from Worldly Bondage and get Great Happiness.
@@ -294,7 +294,7 @@ const texts: MantraType[] = [
     time: 214.7,
     english: `Jo Yah Padhe Hanuman Chalisa । Hoy Siddhi Sakhi Gaurisa
     Tulsidas Sada Hari Chera । Keeje Nath Hriday Mah Dera`,
-    meaning:  `Those who Read the Hanuman Chalisa (with devotion),
+    meaning: `Those who Read the Hanuman Chalisa (with devotion),
     Will become Perfect, Lord Shiva is the Witness.
     Tulsidas who is Always the Servant of Hari.
     Prays the Lord to Reside in his Heart.
@@ -309,7 +309,7 @@ const texts: MantraType[] = [
     पवनसुत हनुमान की जय ।`,
     time: 224.8,
     english: `Chopai : Pavan Tanay Sankat Haran, Mangal Murti Roop, Ram Lakhan Sita Sahit, Hriday Basahu Sur Bhoop`,
-    meaning:  `Sri Hanuman, who is the Son of Pavana, who Removes Difficulties,
+    meaning: `Sri Hanuman, who is the Son of Pavana, who Removes Difficulties,
     Who has an Auspicious Form,
     With Sri Rama, Sri Lakshmana and Devi Sita,
     Please Dwell in my Heart.`,
