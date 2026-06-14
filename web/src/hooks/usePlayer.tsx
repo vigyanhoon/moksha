@@ -86,7 +86,9 @@ export default function usePlayer(resource: MantraResource) {
     };
 
     const stop = () => {
-        const audio = getAudio();
+        const audio = audioRef.current;
+
+        if (!audio) return;
 
         audio.pause();
         setPlaying(false);

@@ -2,10 +2,9 @@ import { createUseStyles } from 'react-jss'
 import playIcon from '../assets/play.png'
 import pause from '../assets/pause.png'
 import loop from '../assets/loop.png'
-import unloop from '../assets/stop.png'
+import unloop from '../assets/loop-cross.png'
 import letterS from '../assets/letter-s.png'
 import letterE from '../assets/letter-e.png'
-import { useEffect } from 'react'
 import { PlayerProps } from '../types.js'
 
 const useStyles = createUseStyles({
@@ -22,12 +21,6 @@ const useStyles = createUseStyles({
 export const Controller = ({ play, stop, playing, looping, setLooping, isEnglish, setIsEnglish }: PlayerProps) => {
 
   const classes = useStyles()
-  useEffect(() => {
-    return () => {
-      stop()
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
 
   const playClicked = () => {
     if (playing) {
