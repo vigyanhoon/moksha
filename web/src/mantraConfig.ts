@@ -1,7 +1,7 @@
-import vishnuSahasranamaTexts from "./texts/vishnu_sahasranama";
-import mahisasurMardiniTexts from "./texts/mahisasur_mardini";
-import hanumanChalisaTexts from "./texts/hanuman_chalisa";
-import shivTandatStrotaTexts from "./texts/shiv_tandav_strota";
+import vishnuSahasranamaTexts from "./texts/vishnu_sahasranama.js";
+import mahisasurMardiniTexts from "./texts/mahisasur_mardini.js";
+import hanumanChalisaTexts from "./texts/hanuman_chalisa.js";
+import shivTandatStrotaTexts from "./texts/shiv_tandav_strota.js";
 
 import vishnuSahasranamaAudio from "./audio/vishnu_sahasranama.mp3";
 import mahisasurMardiniAudio from "./audio/mahisasur_mardini.mp3";

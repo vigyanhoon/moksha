@@ -1,6 +1,6 @@
 import { createUseStyles } from "react-jss";
 import { useRef, useState } from "react";
-import { MantraProps } from "../types";
+import { MantraProps } from "../types.js";
 
 const useStyles = createUseStyles({
   container: {

@@ -1,10 +1,10 @@
-import { Mantra } from '../components/Mantra';
+import { Mantra } from '../components/Mantra.js';
 import { createUseStyles } from 'react-jss';
-import { Controller } from '../components/Controller';
-import usePlayer from '../hooks/usePlayer';
+import { Controller } from '../components/Controller.js';
+import usePlayer from '../hooks/usePlayer.js';
 import {
     MantraResource,
-} from "../mantraConfig";
+} from "../mantraConfig.js";
 
 const useStyles = createUseStyles({
     app: {

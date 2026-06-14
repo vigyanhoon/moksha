@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { MantraType } from '../types';
-import { mantraConfig, MantraResource } from '../mantraConfig';
+import { MantraType } from '../types.js';
+import { mantraConfig, MantraResource } from '../mantraConfig.js';
 
 export default function usePlayer(resource: MantraResource) {
     const [currentPlaying, setCurrentPlaying] = useState(0);

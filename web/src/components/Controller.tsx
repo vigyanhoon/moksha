@@ -6,7 +6,7 @@ import unloop from '../assets/stop.png'
 import letterS from '../assets/letter-s.png'
 import letterE from '../assets/letter-e.png'
 import { useEffect } from 'react'
-import { PlayerProps } from '../types'
+import { PlayerProps } from '../types.js'
 
 const useStyles = createUseStyles({
   container: {

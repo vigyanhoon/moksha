@@ -1,7 +1,7 @@
 import { createUseStyles } from "react-jss";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
-import MantraPage from "./views/MantraPage";
-import { mantraConfig } from "./mantraConfig";
+import MantraPage from "./views/MantraPage.js";
+import { mantraConfig } from "./mantraConfig.js";
 
 const useStyles = createUseStyles({
   center: {
