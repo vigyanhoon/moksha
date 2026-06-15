@@ -11,7 +11,7 @@ const texts: MantraType[] = [
 गलेऽवलम्ब्य लम्बितां भुजङ्गतुङ्गमालिकाम्।
 डमड्डमड्डमड्डमन्निनादवड्डमर्वयं
 चकार चण्डताण्डवं तनोतु नः शिवः शिवम्॥१॥`,
-        time: 106.8,
+        time: 32.3,
         english: `Jatāṭavī-gala-jjala-pravāha-pāvita-sthale
 Gale'valambya lambitāṃ bhujanga-tuṅga-mālikām।
 Ḍamaḍ ḍamaḍ ḍamaḍ ḍama-nnināda-vaḍḍa-marvayaṃ
@@ -28,7 +28,7 @@ Chakāra chaṇḍa-tāṇḍavaṃ tanotu naḥ Śivaḥ śivam॥`,
 विलोलवीचिवल्लरी विराजमानमूर्धनि।
 धगद्धगद्धगज्ज्वलल्ललाटपट्टपावके
 किशोरचन्द्रशेखरे रतिः प्रतिक्षणं मम॥`,
-        time: 168.7,
+        time: 52.3,
         english: `Jatā-kaṭāha-sambhrama-bhraman-nilimpa-nirjharī
 Vilola-vīchi-vallari-virājamāna-mūrdhani।
 Dhagad-dhagad-dhagaj-jvalal-lalāṭa-paṭṭa-pāvake
@@ -45,7 +45,7 @@ Kishora-chandra-śekhare ratiḥ pratikṣaṇaṃ mama॥`,
 स्फुरद्दिगन्तसन्तति प्रमोदमानमानसे।
 कृपाकटाक्षधोरणी निरुद्धदुर्धरापदि
 क्वचिद्दिगम्बरे मनो विनोदमेतु वस्तुनि ।।३।।`,
-        time: 233.4,
+        time: 76.7,
         english: `Dharādhara-indra-nandinī-vilāsa-bandhu-bandhura
 Sphurat-diganta-santati-pramoda-māna-mānase।
 Kṛpā-kaṭākṣa-dhoraṇī-niruddha-durdharāpadi
@@ -62,7 +62,7 @@ Kvacid-digambare mano vinodam-etu vastuni॥`,
 कदम्बकुङ्कुमद्रवप्रलिप्तदिग्वधूमुखे।
 मदान्धसिन्धुरस्फुरत्त्वगुत्तरीयमेदुरे
 मनो विनोदमद्भुतं बिभर्तु भूतभर्तरि ॥4॥`,
-        time: 296,
+        time: 95.5,
         english: `Jatā-bhujanga-piṅgala-sphurat-phaṇā-maṇi-prabhā
 Kadamba-kuṅkuma-drava-pralipta-dig-vadhū-mukhe।
 Madāndha-sindhu-rasphurat-tvag-uttarīya-medure
@@ -79,7 +79,7 @@ Mano vinodam-adbhutaṃ bibhartu bhūta-bhartari॥`,
 प्रसूनधूलिधोरणी विधूसराङ्घ्रिपीठभूः।
 भुजङ्गराजमालया निबद्धजाटजूटकः
 श्रियै चिराय जायतां चकोरबन्धुशेखरः॥५॥`,
-        time: 358,
+        time: 148.3,
         english: `Sahasra-lochana-prabhṛtya-śeṣa-lekha-śekhara
 Prasūna-dhūli-dhoraṇī-vidhūsarāṅghri-pīṭha-bhūḥ।
 Bhujanga-rāja-mālayā nibaddha-jāta-jūṭakaḥ
@@ -96,7 +96,7 @@ Bhujanga-rāja-mālayā nibaddha-jāta-jūṭakaḥ
 निपीतपञ्चसायकं नमन्निलिम्पनायकम्।
 सुधामयूखलेखया विराजमानशेखरं
 महाकपालिसम्पदे शिरोजटालमस्तु नः ॥६॥`,
-        time: 418.2,
+        time: 166,
         english: `Lalāṭa-chatvara-jvalad-dhanañjaya-sphuliṅga-bhā
 Nipīta-pañca-sāyakaṃ naman-nilimpa-nāyakam।
 Sudhā-mayūkha-lekhayā virājamāna-śekharaṃ
@@ -113,7 +113,7 @@ Mahā-kapāli-sampade śiro-jaṭālam-astu naḥ॥`,
 द्धनञ्जयाहुतीकृत प्रचण्डपञ्चसायके।
 धराधरेन्द्रनन्दिनी कुचाग्रचित्रपत्रक
 प्रकल्पनैकशिल्पिनी त्रिलोचने रतिर्मम ॥७॥`,
-        time: 486.8,
+        time: 185.5,
         english: `Karāla-bhāla-paṭṭikā-dhagaddha-gaddha-gajjvala
 Dhanañjaya-āhutīkṛta prachaṇḍa-pañcha-sāyake।
 Dharādhara-indra-nandinī-kuchāgra-chitra-patraka
@@ -130,7 +130,7 @@ Prakalpanaika-śilpinī trilochane ratir mama॥`,
 कुहूनिशीथिनीतमः प्रबन्धबद्धकन्धरः।
 निलिम्पनिर्झरीधरस्तनोतु कृत्तिसिन्धुरः
 कलानिधानबन्धुरः श्रियं जगद्धुरन्धरः ॥८॥`,
-        time: 546.8,
+        time: 199.3,
         english: `Navīna-megha-maṇḍalī-niruddha-durdhara-sphurat
 Kuhū-niśīthini-tamaḥ prabandha-baddha-kandharaḥ।
 Nilimpa-nirjharī-dharaḥ stanotu kṛtti-sindhuraḥ
@@ -147,7 +147,7 @@ Kalā-nidhāna-bandhuraḥ śriyaṃ jagad-dhurandharaḥ॥`,
 वलम्बिकण्ठकन्दली रुचिप्रबद्धकन्धरम्।
 स्मरच्छिदं पुरच्छिदं भवच्छिदं मखच्छिदं
 गजच्छिदान्धकच्छिदं तमन्तकच्छिदं भजे ॥९॥॥`,
-        time: 609.5,
+        time: 226.8,
         english: `Praphulla-nīla-paṅkaja prapañcha-kālima-prabhā
 Valambi-kaṇṭha-kandalī-ruchi-prabaddha-kandharam।
 Smarachchhidaṃ purachchhidaṃ bhavachchhidaṃ makhachchhidaṃ
@@ -164,7 +164,7 @@ Gajachchidāndhaka-chchhidaṃ tam-antaka-chchhidaṃ bhaje॥`,
 रसप्रवाहमाधुरी विजृम्भणामधुव्रतम्।
 स्मरान्तकं पुरान्तकं भवान्तकं मखान्तकं
 गजान्तकान्धकान्तकं तमन्तकान्तकं भजे ॥१०॥`,
-        time: 670,
+        time: 255,
         english: `Akharva-sarva-maṅgalā-kalā-kadamba-mañjarī
 Rasa-pravāha-mādhurī-vijṛmbhaṇā-madhuvratam।
 Smarāntakaṃ purāntakaṃ bhavāntakaṃ makhāntakaṃ
@@ -181,7 +181,7 @@ Gajāntakāndhaka-kāntakaṃ tam-antaka-kāntakaṃ bhaje॥`,
 द्ध्विनिर्गमत्क्रमस्फुरत्करालभालहव्यवाट्।
 धिमिद्धिमिद्धिमिद्ध्वनन्मृदङ्गतुङ्गमङ्गल-
 ध्वनिक्रमप्रवर्तित प्रचण्डताण्डवः शिवः ॥११॥`,
-        time: 733,
+        time: 296.5,
         english: `Jayatv-ad-abhravibhrama-bhramad-bhujanga-maśvasan
 Dhigdhigdhi nirgamat-karāla-bhāla-havyavāṭ।
 Dhimid-dhimid-dhimid-dhvanan-mṛdaṅga-tuṅga-maṅgala
@@ -198,7 +198,7 @@ Dhvanikrama-pravartita-prachaṇḍa-tāṇḍavaḥ Śivaḥ॥`,
 गरिष्ठरत्नलोष्ठयोः सुहृद्विपक्षपक्षयोः।
 तृणारविन्दचक्षुषोः प्रजामहीमहेन्द्रयोः
 समं प्रवृत्तिकः कदा सदाशिवं भजाम्यहम् ॥१२॥`,
-        time: 790.7,
+        time: 311.5,
         english: `Dṛṣad-vichitra-talpayor-bhujanga-mauktika-srajor
 Gariṣṭha-ratna-loṣṭhayoḥ suhṛd-vipakṣa-pakṣayoḥ।
 Tṛṇāravinda-chakṣuṣoḥ prajā-mahī-mahendra-yoḥ
@@ -215,7 +215,7 @@ Samaṃ pravartayan-manaḥ kadā sadāśivaṃ bhaje॥`,
 विमुक्तदुर्मतिः सदा शिरःस्थमञ्जलिं वहन्।
 विमुक्तविलोललोचनो ललामभाललग्नकः
 शिवेति मन्त्रमुच्चरन् कदा सुखी भवाम्यहम् ॥१३॥`,
-        time: 851.8,
+        time: 342,
         english: `Kadā nilimpa-nirjharī-nikuñja-koṭare vasanh
 Vimukta-dur-matiḥ sadā śiraḥ-stham-añjaliṃ vahan।
 Vilola-lochano lalāma-bhāla-lagnakaḥ
@@ -232,7 +232,7 @@ Vilola-lochano lalāma-bhāla-lagnakaḥ
 पठन्स्मरन् ब्रुवन्नरो विशुद्धिमेतिसंततम्।
 हरे गुरौ सुभक्तिमाशु याति नान्यथा गतिं
 विमोहनं हि देहिनां सुशङ्करस्य चिन्तनम् ॥१४॥`,
-        time: 915.3,
+        time: 368,
         english: `Imaṃ hi nityaṃ eva mukta-muktam-ottamaṃ stavam
 Paṭhan-smaran bruvan-naro viśuddhim-eti santatam।
 Hare gurau subhaktim-āśu yāti nānyathā gatiṃ
