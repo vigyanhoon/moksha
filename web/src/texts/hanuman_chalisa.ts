@@ -4,8 +4,8 @@ const texts: MantraType[] = [
   {
     mantra: `श्रीगुरु-चरन-सरोज-रज
     निज-मन-मुकुर सुधारि ।
-    बरनउँ रघुबर-बिमल-जस
-    जो दायक फल चारि ॥
+    बरनउँ रघुबर-बिमल-जसु
+    जो दायकु फल चारि ॥
     बुद्धि-हीन तनु जानिकै
     सुमिरौं पवनकुमार ।
     बल बुधि बिद्या देहु मोहिं
@@ -20,10 +20,14 @@ const texts: MantraType[] = [
     Bal Buddhi Vidya Dehu Mohi, 
     Harahu Kalesh Bikaar ॥`,
     meaning:
-      `With the Dust of the Lotus Feet of Sri Gurudeva, I Clean the Mirror of my Mind.
-      I Narrate the Sacred Glory of Sri Raghubar (Sri Rama Chandra), who Bestows the Four Fruits of Life (Dharma, Artha, Kama and Moksha).
-      Considering Myself as Ignorant, I Meditate on You, O Pavan Kumar (Hanuman).
-      Bestow on me Strength, Wisdom and Knowledge, and Remove my Afflictions and Blemishes.`,
+      `श्री = पवित्र, गुरु = सद्गुरु, चरन = चरण, सरोज = कमल, रज = धूल, निज = अपना, मन = मन, मुकुर = दर्पण, सुधारि = स्वच्छ करके।
+अर्थ: गुरु के कमल समान चरणों की धूल से अपने मन रूपी दर्पण को शुद्ध करके मैं भगवान श्रीराम के निर्मल यश का वर्णन करता हूँ, जो धर्म, अर्थ, काम और मोक्ष—इन चार पुरुषार्थों को प्रदान करता है।
+बरनऊँ = वर्णन करता हूँ, रघुबर = रघुवंश में श्रेष्ठ श्रीराम, बिमल = निर्मल, जसु = यश, जो = जो, दायक = देने वाला, फल = फल, चारि = चार।
+अर्थ: मैं श्रीराम के पवित्र यश का वर्णन करता हूँ, जो जीवन के चारों पुरुषार्थ प्रदान करता है।
+बुद्धिहीन = अल्पबुद्धि, तनु = स्वयं को, जानिके = जानकर, सुमिरौं = स्मरण करता हूँ, पवन-कुमार = पवनदेव के पुत्र हनुमान।
+अर्थ: स्वयं को बुद्धिहीन जानकर मैं पवनपुत्र हनुमान का स्मरण करता हूँ।
+बल = शक्ति, बुद्धि = विवेक, विद्या = ज्ञान, देहु = दीजिए, मोहिं = मुझे, हरहु = दूर कीजिए, कलेस = दुःख, विकार = मन के दोष।
+अर्थ: हे हनुमान! मुझे शक्ति, बुद्धि और ज्ञान प्रदान कीजिए तथा मेरे सभी दुःख और मानसिक विकार दूर कीजिए।`,
   },
   {
     mantra: `जय हनुमान ज्ञान-गुन-सागर ।
@@ -33,10 +37,14 @@ const texts: MantraType[] = [
     time: 22.7,
     english: `Jai Hanuman Gyan Gun Sagar । Jai Kipis Tihun Lok Ujgaar
     Ramdoot Atulit Bal Dhamaa । Anjani Putra Pavansut naamaa.`,
-    meaning: `Victory to You, O Hanuman, Who is the Ocean of Wisdom and Virtue,
-    Victory to the Lord of the Monkeys, Who is the Enlightener of the Three Worlds.
-    You are the Messenger of Sri Rama possessing Immeasurable Strength,
-    You are Known as Anjani-Putra (son of Anjani) and Pavana-Suta (son of Pavana, the wind-god).`,
+    meaning: `जय = विजय हो, हनुमान = श्री हनुमान, ज्ञान = ज्ञान, गुण = सद्गुण, सागर = समुद्र।
+जय = विजय हो, कपीस = वानरों के स्वामी, तिहुँ = तीनों, लोक = लोक, उजागर = प्रसिद्ध, प्रकाशमान।
+राम = श्रीराम, दूत = संदेशवाहक, अतुलित = जिसकी तुलना न हो सके, बल = शक्ति, धामा = भंडार।
+अंजनि = माता अंजना, पुत्र = बेटे, पवनसुत = पवनदेव के पुत्र, नामा = नाम से प्रसिद्ध।
+ज्ञान और सद्गुणों के अथाह सागर श्रीहनुमान की जय हो।
+वानरश्रेष्ठ श्रीहनुमान की जय हो, जिनकी कीर्ति तीनों लोकों में प्रकाशित है।
+आप श्रीराम के दूत हैं और अतुलनीय बल के भंडार हैं।
+आप माता अंजना के पुत्र हैं और पवनपुत्र के नाम से विख्यात हैं।`,
   },
   {
     mantra: `महाबीर बिक्रम बजरंगी ।
@@ -46,25 +54,22 @@ const texts: MantraType[] = [
     time: 32.8,
     english: `Mahabeer Bikram Bajrangi । Kumati Nivaar Sumati Ke Sangi
     Kanchan Baran Biraaj Subesaa । Kanan kundal kunchit kesa`,
-    meaning: `You are a Great Hero, extremely Valiant, and body as strong as Thunderbolt,
-    You are the Dispeller of Evil Thoughts and Companion of Good Sense and Wisdom.
-    You possess a Golden Hue, and you are Neatly Dressed,
-    You wear Ear-Rings and have beautiful Curly Hair.
-    `,
+    meaning: `महाबीर = महान वीर, बिक्रम = पराक्रम, बजरंगी = वज्र के समान अंगों वाले। कुमति = बुरी बुद्धि, निवार = दूर करने वाले, सुमति = सद्बुद्धि, के = के, संगी = साथी। कंचन = सोने के समान, बरन = वर्ण, बिराज = शोभायमान, सुबेसा = सुंदर वेश। कानन = कान, कुंडल = कुण्डल, कुंचित = घुँघराले, केसा = बाल।
+आप महान वीर और अत्यंत पराक्रमी हैं, जिनका शरीर वज्र के समान दृढ़ है। आप बुरी बुद्धि को दूर करके सद्बुद्धि प्रदान करते हैं।
+आपका शरीर स्वर्ण के समान तेजस्वी है, आप सुंदर वस्त्र धारण करते हैं, कानों में कुण्डल और घुँघराले केश आपकी शोभा बढ़ाते हैं।`,
   },
   {
-    mantra: `हाथ बज्र अरु ध्वजा बिराजै ।
+    mantra: `हाथ बज्र औ ध्वजा बिराजै ।
     काँधे मूँज-जनेऊ साजै॥ ५ ॥
     शंकर-सुवन केशरी-नन्दन ।
     तेज प्रताप महा जग-बंदन ॥ ६ ॥`,
     time: 42.9,
     english: `Hath Bajra Aur Dhvaja Birjai । Kandhe Moonj Janeu saage
     Shankar Suvna Kesari Nandan । Tej Pratap Maha Jag Bandan`,
-    meaning: `You hold the Thunderbolt and the Flag in your Hands.
-    You wear the Sacred Thread across your Shoulder.
-    You are the Incarnation of Lord Shiva and Son of Kesari,
-    You are Adored by the whole World on account of your Great Strength and Courage.
-    `,
+    meaning: `हाथ = हाथ, बज्र = वज्र, अउ = और, ध्वजा = ध्वज, बिराजै = सुशोभित हैं। काँधे = कंधे पर, मूँज = मूँज घास, जनेऊ = यज्ञोपवीत, साजै = सुशोभित है। शंकर = भगवान शिव, सुवन = अंश या पुत्र, केसरी = केसरी, नंदन = पुत्र। तेज = तेज, प्रताप = प्रताप, महा = महान, जग = संसार, बंदन = वंदनीय।
+आपके हाथ में वज्र और ध्वजा शोभायमान हैं तथा कंधे पर मूँज का जनेऊ सुशोभित है।
+आप भगवान शिव के अंश और केसरी के पुत्र हैं। आपका तेज और प्रताप पूरे संसार में वंदनीय है।
+  `,
   },
   {
     mantra: `बिद्यावान गुनी अति चातुर ।
@@ -74,11 +79,9 @@ const texts: MantraType[] = [
     time: 53,
     english: `Vidyavaan Guni Ati Chatur । Ram Kaj Karibe Ko Atur
     Prabhu Charittra Sunibe Ko Rasiya । Ram Lakhan Sita man basyia`,
-    meaning: `You are Learned, Virtuous and Extremely Intelligent,
-    You are always Eager to do the Works of Sri Rama.
-    You Delight in Listening to the Glories of Sri Rama,
-    You have Sri Rama, Sri Lakshmana and Devi Sita Dwelling in your Heart.
-    `,
+    meaning: `विद्यावान = विद्वान, गुनी = गुणवान, अति = अत्यंत, चातुर = बुद्धिमान। राम = श्रीराम, काज = कार्य, करिबे = करने के, को = लिए, आतुर = सदैव तत्पर। प्रभु = भगवान, चरित्र = चरित्र, सुनिबे = सुनने में, को = के लिए, रसिया = प्रेमी। राम = श्रीराम, लखन = लक्ष्मण, सीता = सीताजी, मन = मन, बसिया = निवास करने वाले।
+आप अत्यंत विद्वान, गुणवान और बुद्धिमान हैं तथा श्रीराम के कार्य करने के लिए सदैव तत्पर रहते हैं।
+आप भगवान श्रीराम के चरित्र का श्रवण करने में आनंद लेते हैं और आपके हृदय में श्रीराम, लक्ष्मण और सीताजी सदैव निवास करते हैं.`,
   },
   {
     mantra: `सूक्ष्म रूप धरि सियहिं दिखावा ।
@@ -88,11 +91,9 @@ const texts: MantraType[] = [
     time: 63.1,
     english: `Sukshma roop Dhari Siyahi Dikhwana । Bikat roop Dhari Lank Jarawa
     Bhim roop Dhari Asur Sanhare । Ramchandra Ke kaaj Savare`,
-    meaning: `You Appeared before Devi Sita Assuming a Diminutive Form (in Lanka),
-    You Assumed an Awesome Form and Burnt Lanka.
-    You Assumed a Gigantic Form and Destroyed the Demons,
-    Thereby Accomplishing the Task of Sri Rama.
-    `,
+    meaning: `सूक्ष्म = अत्यंत छोटा, रूप = स्वरूप, धरि = धारण करके, सियहि = सीताजी के सामने, दिखावा = दिखाया। बिकट = भयानक, रूप = स्वरूप, धरि = धारण करके, लंक = लंका, जरावा = जला दी। भीम = विशाल, रूप = स्वरूप, धरि = धारण करके, असुर = राक्षस, सँहारे = नष्ट किए। रामचंद्र = श्रीराम, के = के, काज = कार्य, सँवारे = पूर्ण किए।
+सीताजी को आश्वस्त करने के लिए आपने सूक्ष्म रूप धारण किया, लंका दहन के लिए विकराल रूप धारण किया।
+राक्षसों के विनाश हेतु विशाल रूप धारण कर श्रीराम के सभी कार्य सफल किए।`,
   },
   {
     mantra: `लाय सँजीवनि लखन जियाये ।
@@ -102,11 +103,9 @@ const texts: MantraType[] = [
     time: 73.2,
     english: `Laye Sajivan Lakhan Jiyaye । Shri Raghubir harashi ur laye
     Raghupati Kinhi Bahut Badaai । Tum Mama Priya Bharat Sam Bahi.`,
-    meaning: `You Brought the Sanjivana herb and Revived Sri Lakshmana.
-    Because of this Sri Rama Embraced You overflowing with Joy.
-    Sri Rama Praised You Greatly,
-    And said: "You are as dear to me as my brother Bharata".
-    `,
+    meaning: `लाय = लाकर, सजीवन = संजीवनी बूटी, लखन = लक्ष्मण, जियाए = जीवित किए। श्रीरघुबीर = श्रीराम, हरषि = प्रसन्न होकर, उर = हृदय से, लाए = लगाया। रघुपति = श्रीराम, कीन्ही = किया, बहुत = अत्यंत, बड़ाई = प्रशंसा। तुम = तुम्हें, मम = मेरा, प्रिय = प्रिय, भरतहि = भरत के समान, सम = समान, भाई = भाई।
+आप संजीवनी बूटी लाकर लक्ष्मणजी के प्राण बचाए, जिससे प्रसन्न होकर श्रीराम ने आपको हृदय से लगा लिया।
+श्रीराम ने आपकी अत्यंत प्रशंसा करते हुए आपको अपने भाई भरत के समान प्रिय बताया।`,
   },
   {
     mantra: `सहसबदन तुम्हरो जस गावैं ।
@@ -116,25 +115,21 @@ const texts: MantraType[] = [
     time: 83.3,
     english: `Sahastra Badan Tumharo Jas Gaave । Asa kahi Shripati Kanth Laagave.
     Sankadik Brahmadi Muneesa । Narad Sarad Sahit Aheesa`,
-    meaning: `The Thousand Headed Seshnag Sings Your Glory",
-    Said Sri Rama to You taking you in his Embrace
-    Sanaka and other Sages, Lord Brahma and other Gods,
-    Narada, Devi Saraswati and Seshnag ...
-    `,
+    meaning: `सहस = हजार, बदन = मुख, तुम्हरो = तुम्हारा, जस = यश। गावैं = गाते हैं, अस = ऐसा, कहि = कहकर, श्रीपति = भगवान विष्णु, कंठ = गले, लगावैं = लगा लेते हैं। सनकादिक = सनक आदि ऋषि, ब्रह्मादि = ब्रह्माजी आदि, मुनीसा = महान मुनि। नारद = नारदजी, सारद = सरस्वतीजी, सहित = सहित, अहीसा = शेषनाग।
+भगवान विष्णु के हजार मुख भी आपके यश का पूर्ण वर्णन नहीं कर सकते और वे स्वयं आपको हृदय से लगा लेते हैं।
+सनकादि ऋषि, ब्रह्माजी, नारदजी, सरस्वतीजी और शेषनाग भी आपकी महिमा का गुणगान करते हैं।`,
   },
   {
-    mantra: `यम कुबेर दिगपाल जहाँते ।
+    mantra: `जम कुबेर दिगपाल जहाँते ।
     कबि कोबिद कहि सकैं कहाँ ते ॥ १५ ॥
     तुम उपकार सुग्रीवहिं कीन्हा ।
     राम मिलाय राज-पद दीन्हा ॥ १६ ॥`,
     time: 93.3,
     english: `Jam Kuber Digpal Jahan Te । Kabi Kobid Kahin Sake Kahan Te
     Tum Upkar Sugrivahi Keenha । Ram Milay Rajpad Deenha`,
-    meaning: `Yama (god of death), Kubera (god of wealth), Digpalas (the guardian deities),
-    Poets and Scholars have not been able to Describe Your Glories in full.
-    You Rendered a great Help to Sugriva.
-    You Introduced him to Sri Rama and thereby Gave back his Kingdom.
-    `,
+    meaning: `जम = यमराज, कुबेर = धन के देवता, दिगपाल = दिशाओं के रक्षक। जहाँ = जहाँ तक, ते = तक, कवि = कवि, कोबिद = विद्वान, कहि = कह, सके = सकें। तुम = तुमने, उपकार = उपकार, सुग्रीवहि = सुग्रीव पर, कीन्हा = किया। राम = श्रीराम, मिलाय = मिलवाया, राजपद = राज्य का पद, दीन्हा = दिलाया।
+यमराज, कुबेर, दिग्पाल और महान विद्वान भी आपकी महिमा का पूर्ण वर्णन नहीं कर सकते।
+आपने सुग्रीव का श्रीराम से मिलन कराया, जिसके कारण उन्हें पुनः अपना राज्य प्राप्त हुआ।`,
   },
   {
     mantra: `तुम्हरो मंत्र बिभीषन माना ।
@@ -144,10 +139,9 @@ const texts: MantraType[] = [
     time: 103.5,
     english: `Tumharo Mantr Bibhishan Maana । Lankeshwar Bhaye Sab Jag Jaana
     Jug Sahastra Jojan Par Bhaanu । Leelyo Taahi Madhur Phal Jaanu`,
-    meaning: `Vibhisana Followed your Advice,
-    And the Whole World Knows that he became the King of Lanka.
-    The Sun which was at a distance of Sixteen Thousand Miles,
-    You Swallowed It (the Sun) thinking it to be a Sweet Fruit.`,
+    meaning: `तुम्हरो = तुम्हारा, मंत्र = परामर्श, विभीषण = विभीषण ने, माना = स्वीकार किया। लंकेश्वर = लंका का राजा, भए = बने, सब = सारा, जग = संसार, जाना = जानता है। जुग = युग, सहस्र = हजार, योजन = दूरी की माप, पर = दूर। भानु = सूर्य, लील्यो = निगल लिया, ताहि = उसे, मधुर = मीठा, फल = फल, जानू = समझकर।
+विभीषण ने आपका परामर्श माना और समस्त संसार जानता है कि वे लंका के राजा बने।
+बाल्यावस्था में आपने हजारों योजन दूर स्थित सूर्य को मीठा फल समझकर निगल लिया।`,
   },
   {
     mantra: `प्रभु-मुद्रिका मेलि मुख माहीं ।
@@ -157,11 +151,10 @@ const texts: MantraType[] = [
     time: 113.6,
     english: `Prabhu Mudrika Meli Mukha Maaheen । Jaladhi Langhi Gaye Acharaj Naheen
     Durgam Kaaj Jagat Ke Jeete । Sugam Anugrah Tumhre Te Te.`,
-    meaning: `Carrying Lord Sri Rama's Ring in your Mouth,
-    You Crossed the Ocean, no Wonder in that.
-    All the Difficult Tasks in this World,
-    Are Rendered Easy by your Grace.
-    `,
+    meaning: `प्रभु = श्रीराम, मुद्रिका = अंगूठी, मेलि = देकर, मुख = मुख में। जलधि = समुद्र, लाँघि = लाँघकर, गए = गए, अचरज = आश्चर्य, नहिं = नहीं। दुर्गम = कठिन, काज = कार्य, जगत = संसार, के = के, जेते = जितने, सुगम = सरल, अनुग्रह = कृपा, तुम्हरे = तुम्हारी, तेते = उतने।
+श्रीराम की अंगूठी मुख में रखकर आपने समुद्र पार किया, जो आपके लिए कोई आश्चर्य की बात नहीं थी।
+संसार के जितने भी कठिन कार्य हैं, वे आपकी कृपा से सरल हो जाते हैं।
+  `,
   },
   {
     mantra: `राम-दुआरे तुम रखवारे ।
@@ -171,10 +164,9 @@ const texts: MantraType[] = [
     time: 123.7,
     english: `Ram Duware Tum Rakhavare । Hot Na Aagya Binu Paisare
     Sab Sukh Lahen Tumhari Sarna । Tum Rakshak Kaahu Ko Darnaa`,
-    meaning: `You are the Gate-Keeper of Sri Rama's Kingdom.
-    No one can Enter without Your Permission.
-    Those who take Refuge in You enjoy all Happiness.
-    If You are the Protector, what is there to Fear?
+    meaning: `राम = श्रीराम, दुआरे = द्वार पर, तुम = तुम, रखवारे = रक्षक। होत = होता, न = नहीं, आज्ञा = अनुमति, बिनु = बिना, पैसारे = प्रवेश। सब = सभी, सुख = सुख, लहै = प्राप्त करते हैं, तुम्हारी = तुम्हारी, सरना = शरण में। तुम = तुम, रच्छक = रक्षक, काहू = किसी, को = को, डर = भय, ना = नहीं।
+आप श्रीराम के द्वार के रक्षक हैं; आपकी अनुमति के बिना कोई उनके पास नहीं पहुँच सकता।
+जो आपकी शरण में आता है वह सभी सुख प्राप्त करता है, और जब आप रक्षक हों तो किसी प्रकार का भय नहीं रहता।
     `,
   },
   {
@@ -185,10 +177,9 @@ const texts: MantraType[] = [
     time: 133.8,
     english: `Aapan Tej Samharo Aapei । Tinau Lok Hank Te Kanpei
     Bhoot Pisaach Nikat Nahi Avei । Mahabir Jab Naam Sunavei.`,
-    meaning: `You alone can Control Your Great Energy.
-    When you Roar, the Three Worlds Tremble.
-    Ghosts and Evil Spirits will Not Come Near,
-    When one Utters the Name of Mahavir (Hanuman).
+    meaning: `आपन = अपना, तेज = तेज, सम्हारो = नियंत्रित करते हैं। आपै = स्वयं, तीनों = तीनों, लोक = लोक, हाँक = गर्जना, तें = से, काँपै = काँप उठते हैं। भूत = भूत, पिशाच = पिशाच, निकट = पास, नहिं = नहीं, आवै = आते। महाबीर = महान वीर, जब = जब, नाम = नाम, सुनावै = सुनाया जाता है।
+आप अपने अपार तेज को स्वयं नियंत्रित रखते हैं, फिर भी आपकी गर्जना से तीनों लोक काँप उठते हैं।
+जहाँ आपका नाम लिया जाता है, वहाँ भूत-प्रेत और नकारात्मक शक्तियाँ पास नहीं आतीं।    
     `,
   },
   {
@@ -199,10 +190,10 @@ const texts: MantraType[] = [
     time: 144,
     english: `Nasei Rog Hare Sab Peera । Japat Niranter Hanumant Beera
     Sankat Te Hanuman Chhudavei । Man Kram Bachan Dhyan Jo Lavei.`,
-    meaning: `You Destroy Diseases and Remove all Pains,
-    When one Utters your Name Continuously.
-    Samkatt Se Hanumaan Chuddaavai |
-    Man Kram Bacan Dhyaan Jo Laavai ||`,
+    meaning: `नासै = नष्ट होते हैं, रोग = रोग, हरै = दूर करते हैं, सब = सभी, पीरा = पीड़ाएँ। जपत = जप करने से, निरंतर = लगातार, हनुमत = हनुमान, बीरा = वीर। संकट = विपत्ति, तें = से, हनुमान = हनुमान, छुड़ावै = मुक्त करते हैं। मन = मन, क्रम = कर्म, बचन = वचन, ध्यान = ध्यान, जो = जो, लावै = लगाता है।
+आपके निरंतर नाम-जप से रोग और सभी प्रकार की पीड़ाएँ दूर हो जाती हैं।
+जो मन, कर्म और वचन से आपका स्मरण करता है, उसे आप सभी संकटों से मुक्त कर देते हैं।    
+    `,
   },
   {
     mantra: `सब पर राम तपस्वी राजा ।
@@ -212,10 +203,10 @@ const texts: MantraType[] = [
     time: 154,
     english: `Sub Par Ram Tapasvee Raaja । Tinke Kaaj Sakal Tum Saaja
     Aur Manorath Jo Koi Lave । Soi Amit Jivan Phal Pave.`,
-    meaning: `Sri Rama is the King of the Tapaswis (devotees engaged in penances).
-    And You (Hanuman) Fulfill all Works of Sri Rama (as a caretaker).
-    Devotees who have any Other Desires,
-    Will ultimately get the Highest Fruit of Life.`,
+    meaning: `सब = सभी, पर = पर, राम = श्रीराम, तपस्वी = तपस्वियों में श्रेष्ठ, राजा = राजा। तिन = उनके, के = के, काज = कार्य, सकल = सभी, तुम = तुम, साजा = पूर्ण करते हो। और = अन्य, मनोरथ = इच्छाएँ, जो = जो, कोई = कोई, लावै = लेकर आता है। सोइ = वही, अमित = असीम, जीवन = जीवन, फल = फल, पावै = प्राप्त करता है।
+श्रीराम समस्त तपस्वियों में श्रेष्ठ राजा हैं, और उनके सभी कार्य आप पूर्ण करते हैं।
+जो भी आपके पास अपनी सच्ची इच्छा लेकर आता है, उसे जीवन में भरपूर फल प्राप्त होता है।    
+    `,
   },
   {
     mantra: `चारों जुग परताप तुम्हारा ।
@@ -225,10 +216,10 @@ const texts: MantraType[] = [
     time: 164.1,
     english: `Charo Juung Partap Tumhara । Hai Parsiddha Jagat Ujiyara.
     Sadho Sant Ke Tum Rakhvare । Asur Nikandan Ram Dulare.`,
-    meaning: `Your Glory prevails in all the Four Ages.
-    And your Fame Radiates throughout the World.
-    You are the Saviour of the Saints and Sages.
-    You Destroy the Demons, O Beloved of Sri Rama.`,
+    meaning: `चारों = चारों, जुग = युग, परताप = प्रताप, तुम्हारा = तुम्हारा। है = है, परसिद्ध = प्रसिद्ध, जगत = संसार, उजियारा = प्रकाशित। साधु = संतजन, संत = संत, के = के, तुम = तुम, रखवारे = रक्षक। असुर = राक्षस, निकंदन = विनाश करने वाले, राम = श्रीराम, दुलारे = प्रिय।
+आपका प्रताप चारों युगों में प्रसिद्ध है और आपका यश सम्पूर्ण संसार को प्रकाशित करता है।
+आप संतों के रक्षक हैं, राक्षसों का विनाश करने वाले हैं और श्रीराम के अत्यंत प्रिय हैं।
+    `,
   },
   {
     mantra: `अष्ट सिद्धि नव निधि के दाता ।
@@ -238,10 +229,9 @@ const texts: MantraType[] = [
     time: 174.2,
     english: `Ashta Siddhi Nau Nidhi Ke Data । Asa Bar Din Janki Mata
     Ram Rasayan Tumhare Pasa । Sadaa Raho Raghupati Ke Dasa.`,
-    meaning: `You can Give the Eight Siddhis (supernatural powers) and Nine Nidhis (types of devotions).
-    Mother Janaki (Devi Sita) gave this Blessing to you.
-    You hold the Essence of Devotion to Sri Rama.
-    You Always Remain as the Servant of Raghupati (Sri Rama).
+    meaning: `अष्ट = आठ, सिद्धि = योग की सिद्धियाँ, नौ = नौ, निधि = दिव्य धन-संपत्तियाँ, के = के, दाता = देने वाले। अस = ऐसा, बर = वरदान, दीन = दिया, जानकी = माता सीता, माता = माता। राम = श्रीराम, रसायन = अमृत समान भक्ति, तुम्हरे = तुम्हारे, पासा = पास। सदा = सदैव, रहो = रहो, रघुपति = श्रीराम, के = के, दासा = सेवक।
+माता सीता ने आपको ऐसा वरदान दिया कि आप आठों सिद्धियाँ और नौों निधियाँ प्रदान कर सकते हैं।
+आपके पास श्रीराम की भक्ति रूपी अमृत है और आप सदा श्रीराम के सेवक बने रहते हैं।    
     `,
   },
   {
@@ -252,10 +242,9 @@ const texts: MantraType[] = [
     time: 184.3,
     english: `Tumhare Bhajan Ramko Pavei । Janam Janam Ke Dukh Bisravei
     Anta Kaal Raghubar Pur Jai । Jahan Janma Hari Bhakta Kahai`,
-    meaning: `Through Devotion to You, one gets Sri Rama,
-    Thereby getting Free of the Sorrows of Life after Life.
-    At the End one Goes to the Abode of Raghupati (Sri Rama).
-    Where one is Known as the Devotee of Hari.
+    meaning: `तुम्हरे = तुम्हारे, भजन = भक्ति, राम = श्रीराम, को = को, पावै = प्राप्त करता है। जनम = जन्म, जनम = जन्म, के = के, दुख = दुःख, बिसरावै = भूल जाता है। अंत = अंतिम समय, काल = समय, रघुबर = श्रीराम, पुर = धाम, जाई = जाता है। जहाँ = वहाँ, जन्म = जन्म, हरि = भगवान, भक्त = भक्त, कहाई = कहलाता है।
+जो आपकी भक्ति करता है, वह श्रीराम को प्राप्त करता है और अनेक जन्मों के दुःखों से मुक्त हो जाता है।
+जीवन के अंत में ऐसा भक्त श्रीराम के धाम को प्राप्त करता है और पुनर्जन्म होने पर भी भगवान का भक्त कहलाता है।    
     `,
   },
   {
@@ -266,10 +255,9 @@ const texts: MantraType[] = [
     time: 194.6,
     english: `Aur Devata Chitt Na Dharai । Hanumant Sei Sarva Sukh Karai
     Sankat Kate Mitey Sab Peera । Jo Sumirei Hanumant Balbeera`,
-    meaning: `Even without Worshipping any Other Deities,
-    One Gets All Happiness who Worships Sri Hanuman.
-    Difficulties Disappear and Sorrows are Removed,
-    For Those who Contemplate on the Powerful Sri Hanuman.
+    meaning: `और = अन्य, देवता = देवता, चित्त = मन, न = नहीं, धरई = लगाना। हनुमत = हनुमान, सेइ = सेवा, सर्व = सभी, सुख = सुख, करई = देती है। संकट = विपत्ति, कटै = समाप्त हो जाती है, मिटै = मिट जाती है, सब = सभी, पीरा = पीड़ा। जो = जो, सुमिरै = स्मरण करता है, हनुमत = हनुमान, बलबीरा = महान बलशाली।
+अन्य देवताओं में मन लगाने की आवश्यकता नहीं है; केवल हनुमानजी की सेवा से ही सभी सुख प्राप्त होते हैं।
+जो भी बलशाली हनुमानजी का स्मरण करता है, उसके सभी संकट और पीड़ाएँ दूर हो जाती हैं।    
     `,
   },
   {
@@ -280,10 +268,9 @@ const texts: MantraType[] = [
     time: 204.7,
     english: `Jai Jai Jai Hanuman Gosai । Kripa Karahu Gurudev Ki Naiee
     Jo Sat Baar Paath Kar Koi । Chhutahi Bandi Maha Sukh Hoi.`,
-    meaning: `Victory, Victory, Victory to You, O Hanuman,
-    Please Bestow your Grace as our Supreme Guru.
-    Those who Recite this Hanuman Chalisa one hundred times (with devotion),
-    Will get Freed from Worldly Bondage and get Great Happiness.
+    meaning: `जय = विजय हो, जय = विजय हो, जय = विजय हो, हनुमान = श्रीहनुमान, गोसाईं = स्वामी। कृपा = कृपा, करहु = कीजिए, गुरु = गुरु, देव = देव, की = की, नाईं = समान। जो = जो, सत = सौ, बार = बार, पाठ = पाठ, कर = करता, कोई = कोई। छूटहि = मुक्त हो जाता है, बंदि = बंधन, महा = बड़े, सुख = सुख, होई = प्राप्त होता है।
+हे स्वामी हनुमान! आपकी बार-बार जय हो। कृपया मुझ पर गुरु और देवता के समान कृपा कीजिए।
+जो कोई इस चालीसा का सौ बार पाठ करता है, वह सभी बंधनों से मुक्त होकर महान सुख प्राप्त करता है।    
     `,
   },
   {
@@ -294,25 +281,21 @@ const texts: MantraType[] = [
     time: 214.7,
     english: `Jo Yah Padhe Hanuman Chalisa । Hoy Siddhi Sakhi Gaurisa
     Tulsidas Sada Hari Chera । Keeje Nath Hriday Mah Dera`,
-    meaning: `Those who Read the Hanuman Chalisa (with devotion),
-    Will become Perfect, Lord Shiva is the Witness.
-    Tulsidas who is Always the Servant of Hari.
-    Prays the Lord to Reside in his Heart.
+    meaning: `जो = जो, यह = इस, पढ़ै = पढ़ता है, हनुमान = हनुमान, चालीसा = चालीसा। होय = होता है, सिद्धि = सफलता, साखी = साक्षी, गौरीस = भगवान शिव। तुलसीदास = गोस्वामी तुलसीदास, सदा = सदैव, हरि = भगवान, चेरा = सेवक। कीजै = कीजिए, नाथ = प्रभु, हृदय = हृदय, महँ = में, डेरा = निवास।
+जो इस हनुमान चालीसा का श्रद्धापूर्वक पाठ करता है, उसे सफलता प्राप्त होती है; इसके साक्षी स्वयं भगवान शिव हैं।
+गोस्वामी तुलसीदास प्रार्थना करते हैं कि हे प्रभु! मुझे अपना सेवक बनाए रखें और मेरे हृदय में सदैव निवास करें।    
     `,
   },
   {
     mantra: `पवनतनय संकट-हरन,
     मंगल-मूरति-रूप ।
     राम लखन सीता सहित,
-    हृदय बसहु सुर-भूप ॥
-    सियावर रामचंद्र की जय ।
-    पवनसुत हनुमान की जय ।`,
+    हृदय बसहु सुर-भूप ॥`,
     time: 224.8,
     english: `Chopai : Pavan Tanay Sankat Haran, Mangal Murti Roop, Ram Lakhan Sita Sahit, Hriday Basahu Sur Bhoop`,
-    meaning: `Sri Hanuman, who is the Son of Pavana, who Removes Difficulties,
-    Who has an Auspicious Form,
-    With Sri Rama, Sri Lakshmana and Devi Sita,
-    Please Dwell in my Heart.`,
+    meaning: `पवन = पवनदेव, तनय = पुत्र, संकट = संकट, हरन = हरने वाले। मंगल = मंगलकारी, मूरति = स्वरूप, रूप = रूप। राम = श्रीराम, लखन = लक्ष्मण, सीता = सीताजी, सहित = सहित, हृदय = हृदय, बसहु = निवास करें। सुर = देवता, भूप = राजा, सब = सभी, साक्षी = साक्षी।
+हे पवनपुत्र! आप संकटों को हरने वाले और मंगलमय स्वरूप हैं। कृपया श्रीराम, लक्ष्मण और सीताजी सहित मेरे हृदय में सदैव निवास करें।    
+    `,
   },
 ];
 
